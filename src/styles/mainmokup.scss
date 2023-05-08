@@ -1,0 +1,51 @@
+.mokup{
+  width: 55%;
+  position: relative;
+.mokup_main_mo{
+  //전체적인 크기
+   position: absolute;
+   top: 150px;left:50%;
+   transform: translateX(-50%);    
+   width: 210px;height: 450px;
+   transition: all 0.2s linear 0s;
+   background: #bb0000;
+   //transform: rotate(20deg);
+/*    &:hover{     
+     z-index: 3;
+     transform: scale(1.2) translateX(-50%);
+     } */
+
+ .fram_main_mo{
+   //틀
+   margin-left: 12px;margin-top: 42px;
+   width: 90%;height: 80%;
+  background: #342525;
+   overflow: hidden;
+
+   .backmokup_main_mo{
+    //틀 안에 들어갈것
+     display: block;
+      //  transform: translateY(-100px);
+       width: 210px;height: 505px;
+       background: url(../img/kakaomoscreen.png) no-repeat 0 0;
+       background-size: contain;
+       animation: ani12 10.0s linear infinite;
+     }
+     @keyframes ani12 {
+       0%{ transform: translateY(0px);}
+       4%{transform: translateY(0px);}
+       48%{transform: translateY(-155px);}
+       50%{transform: translateY(-155px);}
+       100%{transform: translateY(0px);}
+   }
+ }
+ .mokup_img_main_mo{
+   //목업
+   position: absolute;left: 0;top: 0;clear: both;
+   display: block;
+   width: 550px;height: 460px;
+   background:url(../img/kakaomo.png)no-repeat 0 0;
+   background-size: contain;
+ }
+}
+}

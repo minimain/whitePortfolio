@@ -1,0 +1,301 @@
+.no{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  overflow: hidden;
+  
+  .starfield{
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+
+    span{
+position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+
+	transform-origin: 50% 50%;
+
+  background-image:
+    radial-gradient(2px 2px at 40px 60px, #ccc, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 20px 50px, #ddd, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 30px 100px, #eee, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 40px 60px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 110px 90px, #ccc, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 190px 150px, #ddd, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+
+	animation-name: starfieldRotate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  }
+	
+}
+
+
+.starfield > span:nth-child(1){
+	animation-duration: 18s;
+}
+.starfield > span:nth-child(2){
+	animation-duration: 22s;
+}
+.starfield > span:nth-child(3){
+	animation-duration: 36s;
+}
+.starfield > span:nth-child(4){
+animation-duration: 40s;
+}
+
+@keyframes starfieldRotate {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+  }
+
+/* .tooo{
+position: relative;
+top: 200px;left: 100px;
+display: inline-block;
+  .btn {
+    width: 8em;
+    height: 2.5em;
+    font-size: 1.25rem;
+    font-weight:700;
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    background-color: #ffdd99;
+    
+    color: #5d4f0f;
+    transition: background 200ms ease-in-out;
+  }
+  .border-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+  }
+  .border-line {  
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #5d4f0f;
+    stroke-width: 5px;
+    stroke-dasharray: 0 100;
+    transition: stroke-dasharray 750ms ease-in-out;
+    
+  }
+  
+  .btn:hover {
+    background-color: transparent;
+  }
+  
+  .btn:hover .border-line {
+    stroke-dasharray: 100 0;
+  }
+} */
+
+// 다른것
+.netcontainer {
+  background: #000000;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.box {
+  position: absolute;top: 10%;
+  border-radius: 20px;
+  width: 60px;
+  height: 60px;
+  background: rgba(245, 245, 245, 0.2);
+  box-shadow:  0 0 0 #cccccc,
+               0 0 0 #ffffff,
+                5px 5px 5px #cccccc inset,
+                -10px -10px 10px #ffffff inset;
+  animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 0.5s alternate;
+  animation-fill-mode: forwards;
+
+  // 목업
+  .mokup_img_compo{
+    position: absolute;top:100px;left:50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: mokupneet 1s cubic-bezier(0.16, 1, 0.3, 1) 3.6s alternate;
+    animation-fill-mode: forwards;
+    // pc 본체를 가장 위에 두면 되잖아...
+    .mokup_pc{
+     //전체적인 크기
+      position: absolute;
+      top: 80px;left:50%;
+      transform: translateX(-50%);    
+      width: 550px;height: 380px;
+      transition: all 0.2s linear 0s;
+      //background: #bb0000;
+      // transform: rotate(-20deg);
+      &:hover{     
+        z-index: 3;
+        transform: scale(1.2) translateX(-50%);
+        }
+
+    .fram_pc{
+      //틀
+      margin-left: 22px;margin-top: 42px;
+      width: 94%;height: 63%;
+     //background: #342525;
+      overflow: hidden;
+
+      .backmokup_pc{
+       //틀 안에 들어갈것
+        display: block;
+          transform: translateY(-200px);
+          width: 506px;height: 505px;
+          background: url(../img/netflixpcscreen.png) no-repeat 0 0;
+          background-size: contain;
+          animation: ani10 10.0s linear infinite;
+        }
+        @keyframes ani10 {
+          0%{ transform: translateY(0px);}
+          4%{transform: translateY(0px);}
+          48%{transform: translateY(-109px);}
+          50%{transform: translateY(-110px);}
+          100%{transform: translateY(0px);}
+      }
+    }
+    .mokup_img_pc{
+      //목업
+      position: absolute;left: 0;top: 0;clear: both;
+      display: block;
+      width: 550px;height: 460px;
+      background:url(../img/netflixpc.png)no-repeat 0 0;
+      background-size: contain;
+    }
+  }
+
+  // 탭
+  .mokup_tab{
+    //전체적인 크기
+     position: absolute;
+     top: 300px;left:-450px;      
+     width: 350px;height: 250px;
+     transition: all 0.2s linear 0s;
+     //background: #bb0000;
+     // transform: rotate(-20deg);
+     &:hover{transform: scale(1.5);}
+
+   .fram_tab{
+     //틀
+     margin-left: 15px;margin-top: 33px;
+     width: 94%;height: 71%;
+     //background: #342525;
+     overflow: hidden;
+
+     .backmokup_tab{
+      //틀 안에 들어갈것
+       display: block;
+         transform: translateY(-200px);
+         width: 320px;height: 300px;
+         background: url(../img/netflixtapscreen.png) no-repeat 0 0;
+         background-size: contain;
+         animation: ani10 10.0s linear infinite;
+       }
+       @keyframes ani10 {
+         0%{ transform: translateY(0px);}
+         4%{transform: translateY(0px);}
+         48%{transform: translateY(-83px);}
+         50%{transform: translateY(-84px);}
+         100%{transform: translateY(0px);}
+     }
+   }
+   .mokup_img_tab{
+     //목업
+     position: absolute;left: 0;top: 0;clear: both;
+     display: block;
+     width: 350px;height: 300px;
+     background: url(../img/netflixtap.png)no-repeat 0 0;
+     background-size: contain;
+   }
+ }
+
+//  모바일
+ .mokup_mo{
+    //전체적인 크기
+    
+     position: absolute;
+     top: 300px;left:210px;       
+     width: 100px;height: 200px;
+      //background: #bb0000;
+     // transform: rotate(-20deg);
+     transition: all 0.2s linear 0s;
+     &:hover{
+      
+      transform: scale(1.5);
+     }
+
+   .fram_mo{
+     //틀  
+     width: 100%;height: 100%;
+     background:url(../img/kapro.png) no-repeat 0 0;
+     background-size: contain;
+   }
+ }
+
+}
+}
+@keyframes mokupneet {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes anime {
+  0% {
+    width: 60px;
+    height: 60px;
+    background: #f0f0f0;
+    box-shadow:  0 0 0 #cccccc,
+                 0 0 0 #ffffff,
+                  5px 5px 5px #cccccc inset,
+                  -10px -10px 10px #ffffff inset;
+                  
+  }
+  25% {
+    width: 60px;
+    height: 60px;
+    background: #f8f8f8;
+    box-shadow:  5px 5px 5px #cccccc,
+                 10px 10px 10px #ffffff,
+                 0 0 0 #cccccc inset,
+                 0 0 0 #ffffff inset;
+  }
+  50% {
+    width: 60px;
+    height: 80%;
+    background: #f8f8f8;
+    box-shadow:  5px 5px 5px #cccccc,
+                 10px 10px 10px #ffffff,
+                 0 0 0 #cccccc inset,
+                 0 0 0 #ffffff inset;
+  }
+  100% {
+    width: 80%;
+    height: 80%;
+    background: rgb(255, 223, 45);
+    box-shadow:  10px 10px 5px #565656,
+                 0 0 0 #ffffff,
+                 0 0 0 #cccccc inset,
+                 2px 2px 2px #ffffff inset;
+  }
+
+}
+}

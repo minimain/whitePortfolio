@@ -1,0 +1,66 @@
+@import url(common.scss);
+
+$main-color:#000000;
+$main-background: #ffffff;
+$main-font:'Syncopate', sans-serif;
+$sub-font: 'Roboto', sans-serif;
+
+header{
+  z-index: 10;
+  position: fixed;
+  background-color: $main-background;
+  width: 100%;
+  height: 90px;
+  color: $main-color;
+  font-family: 'Black Han Sans', sans-serif;
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100%;
+   a{text-decoration: none;
+    h1{font-size: 40px;padding-left: 50px;
+    color: $main-color;}
+   }
+  //  a{
+    .btnMenu{
+      margin-right: 50px;
+      width: 30px;height: 30px;
+      display: flex;justify-content: center;align-items: center;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      .btnMenu_burger{
+      width: 30px;height: 3px;border-radius: 5px;
+      background-color: $main-color;transition: all 0.2s ease-in-out;
+
+      &::after{content: "";position: absolute;
+        width: 30px;height: 3px;border-radius: 5px;
+        background-color: $main-color;transition: all 0.2s ease-in-out;
+        transform: translateY(9px);
+      }
+
+      &::before{content: "";position: absolute;
+        width: 30px;height: 3px;border-radius: 5px;
+        background-color: $main-color;transition: all 0.2s ease-in-out;
+        transform: translateY(-9px);
+      }
+      }
+    
+      &:hover{
+        .btnMenu_burger{
+          transform: translateX(-50px);
+          background-color: transparent;box-shadow: none;
+          &::before {
+            transform: rotate(45deg) translate(35px, -35px);
+            background-color: $main-color;}
+          
+          &::after {transform: rotate(-45deg) translate(35px, 35px);background-color: $main-color;}
+        }
+
+      }
+    }
+   }
+    
+  }
+// }
