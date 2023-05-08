@@ -18,7 +18,7 @@ function Katalk() {
 
     <div className='kakamokup_img_compo'>
     {/* 이미지 넣기 */}
-    <div className='mokup_pc'>
+    <div className='kamokup_pc'>
       <div className='fram_pc'>
         <div className='backmokup_pc'>
         </div>

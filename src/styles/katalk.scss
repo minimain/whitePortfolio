@@ -64,11 +64,12 @@ animation-duration: 40s;
 
 
   .kakamokup_img_compo{
+    z-index: 10;
     position: absolute;top:100px;left:50%;
     transform: translateX(-50%);
 
     // pc 본체를 가장 위에 두면 되잖아...
-    .mokup_pc{
+    .kamokup_pc{
      //전체적인 크기
       position: absolute;
       top: 80px;left:50%;
@@ -96,9 +97,9 @@ animation-duration: 40s;
           width: 506px;height: 505px;
           background: url(../img/kakaopcscreen.png) no-repeat 0 0;
           background-size: contain;
-          animation: ani10 10.0s linear infinite;
+          animation: ani30 10.0s linear infinite;
         }
-        @keyframes ani10 {
+        @keyframes ani30 {
           0%{ transform: translateY(0px);}
           4%{transform: translateY(0px);}
           48%{transform: translateY(-109px);}
@@ -141,9 +142,9 @@ animation-duration: 40s;
          width: 320px;height: 300px;
          background: url(../img/katalkchat.png) no-repeat 0 0;
          background-size: contain;
-         animation: ani10 10.0s linear infinite;
+         animation: ani30 10.0s linear infinite;
        }
-       @keyframes ani10 {
+       @keyframes ani30 {
          0%{ transform: translateY(0px);}
          4%{transform: translateY(0px);}
          48%{transform: translateY(-83px);}
