@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/whitePortfolio/static/css/main.a2752d6b.css",
+    "main.js": "/whitePortfolio/static/js/main.6d4502b8.js",
+    "static/media/netflixpcscreen.png": "/whitePortfolio/static/media/netflixpcscreen.18165cd7bc851e8c4b5c.png",
+    "static/media/netflixtapscreen.png": "/whitePortfolio/static/media/netflixtapscreen.f5db66a008dc573c6f3c.png",
+    "static/media/kakaopc_.png": "/whitePortfolio/static/media/kakaopc_.b460abe543b0221ce644.png",
+    "static/media/kakaomoscreen.png": "/whitePortfolio/static/media/kakaomoscreen.e1595640f7dd56098ec5.png",
+    "static/media/katalkchat.png": "/whitePortfolio/static/media/katalkchat.550cd3ec3583b2535769.png",
+    "static/media/kakaomo.png": "/whitePortfolio/static/media/kakaomo.ca3493b75840771924d9.png",
+    "static/media/kakaopcscreen.png": "/whitePortfolio/static/media/kakaopcscreen.e00b8f376b9db2be6f34.png",
+    "static/media/netflixpc.png": "/whitePortfolio/static/media/netflixpc.fd49712e999f6c5ebc41.png",
+    "static/media/kapro.png": "/whitePortfolio/static/media/kapro.7745a74a5d786bbdc1d9.png",
+    "static/media/katab.png": "/whitePortfolio/static/media/katab.9fc20ea16aee4dcf820b.png",
+    "static/media/netflixtap.png": "/whitePortfolio/static/media/netflixtap.f2b4ae5b91ec0ec35c68.png",
+    "index.html": "/whitePortfolio/index.html",
+    "main.a2752d6b.css.map": "/whitePortfolio/static/css/main.a2752d6b.css.map",
+    "main.6d4502b8.js.map": "/whitePortfolio/static/js/main.6d4502b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2752d6b.css",
+    "static/js/main.6d4502b8.js"
+  ]
+}
