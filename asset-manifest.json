@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/whitePortfolio/static/css/main.f67aec65.css",
-    "main.js": "/whitePortfolio/static/js/main.71df46f7.js",
+    "main.css": "/whitePortfolio/static/css/main.46f3543b.css",
+    "main.js": "/whitePortfolio/static/js/main.c46e6a78.js",
     "static/media/netflixpcscreen.png": "/whitePortfolio/static/media/netflixpcscreen.18165cd7bc851e8c4b5c.png",
     "static/media/netflixtapscreen.png": "/whitePortfolio/static/media/netflixtapscreen.f5db66a008dc573c6f3c.png",
     "static/media/cjtapscreen.png": "/whitePortfolio/static/media/cjtapscreen.9ef44cab60d461c95c29.png",
@@ -19,11 +19,11 @@
     "static/media/cjtap.png": "/whitePortfolio/static/media/cjtap.38d5bb9275b6c14a829f.png",
     "static/media/cjmo.png": "/whitePortfolio/static/media/cjmo.2890d9a2ddac37e54dd4.png",
     "index.html": "/whitePortfolio/index.html",
-    "main.f67aec65.css.map": "/whitePortfolio/static/css/main.f67aec65.css.map",
-    "main.71df46f7.js.map": "/whitePortfolio/static/js/main.71df46f7.js.map"
+    "main.46f3543b.css.map": "/whitePortfolio/static/css/main.46f3543b.css.map",
+    "main.c46e6a78.js.map": "/whitePortfolio/static/js/main.c46e6a78.js.map"
   },
   "entrypoints": [
-    "static/css/main.f67aec65.css",
-    "static/js/main.71df46f7.js"
+    "static/css/main.46f3543b.css",
+    "static/js/main.c46e6a78.js"
   ]
 }
