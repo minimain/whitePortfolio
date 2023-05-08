@@ -166,7 +166,26 @@ function Main() {
       </div>
     </div>
     </div>
-    <Mainmokup/>
+
+    <div className='mokup'>
+    <div className='mokup_main_mo'>
+      <div className='fram_main_mo'>
+        <div className='backmokup_main_mo'>
+        </div>
+      </div>
+      <div className='mokup_img_main_mo'></div>
+    </div>
+
+    <div className='mainkakaoicons'>
+    <span className='mainiconka1'>{skillList[2].icon()}</span>
+    <span className='mainiconka2'>{skillList[3].icon()}</span>
+    <span className='mainiconka3'>{skillList[4].icon()}</span>
+    <span className='mainiconka4'>{skillList[5].icon()}</span>
+    </div>
+    
+    </div>
+
+    
 {/* <div className='mokup'>
 <div className='mokup_main_mo'>
       <div className='fram_main_mo'>

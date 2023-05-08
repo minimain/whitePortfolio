@@ -8,7 +8,8 @@
    transform: translateX(-50%);    
    width: 210px;height: 450px;
    transition: all 0.2s linear 0s;
-   background: #bb0000;
+   animation: mainka 2s linear infinite;
+   //background: #bb0000;
    //transform: rotate(20deg);
 /*    &:hover{     
      z-index: 3;
@@ -48,4 +49,13 @@
    background-size: contain;
  }
 }
+/* @keyframes mainka {
+  0%{top: 150px;}
+  25%{top: 120px;}
+  //40%{top: 160px;}
+  50%{top: 150px;}
+  75%{top: 120px;}
+  //80%{top: 160px;}
+  100%{top: 150px;}
+} */
 }

@@ -187,34 +187,34 @@ display: inline-block;
   .mokup_tab{
     //전체적인 크기
      position: absolute;
-     top: 300px;left:-450px;      
+     top:300px;left:-500px;      
      width: 350px;height: 250px;
      transition: all 0.2s linear 0s;
      //background: #bb0000;
      // transform: rotate(-20deg);
-     &:hover{transform: scale(1.5);}
-
+    //  &:hover{transform: scale(1.5);}
+  
    .fram_tab{
      //틀
-     margin-left: 15px;margin-top: 33px;
-     width: 94%;height: 71%;
-     //background: #342525;
+     margin-left: 15px;margin-top: 16px;
+     width: 94%;height: 85%;
+     background: #342525;
      overflow: hidden;
-
+  
      .backmokup_tab{
       //틀 안에 들어갈것
        display: block;
          transform: translateY(-200px);
-         width: 320px;height: 300px;
+         width: 520px;height: 800px;
          background: url(../img/netflixtapscreen.png) no-repeat 0 0;
          background-size: contain;
-         animation: ani10 10.0s linear infinite;
+         animation: netanitab 20.0s linear infinite;
        }
-       @keyframes ani10 {
+       @keyframes netanitab {
          0%{ transform: translateY(0px);}
          4%{transform: translateY(0px);}
-         48%{transform: translateY(-83px);}
-         50%{transform: translateY(-84px);}
+         48%{transform: translateY(-583px);}
+         50%{transform: translateY(-584px);}
          100%{transform: translateY(0px);}
      }
    }
@@ -223,7 +223,7 @@ display: inline-block;
      position: absolute;left: 0;top: 0;clear: both;
      display: block;
      width: 350px;height: 300px;
-     background: url(../img/netflixtap.png)no-repeat 0 0;
+     background: url(../img/cjtap.png)no-repeat 0 0;
      background-size: contain;
    }
  }
