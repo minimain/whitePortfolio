@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/whitePortfolio/static/css/main.46f3543b.css",
-    "main.js": "/whitePortfolio/static/js/main.c46e6a78.js",
+    "main.css": "/whitePortfolio/static/css/main.59b55dfe.css",
+    "main.js": "/whitePortfolio/static/js/main.54a20854.js",
+    "static/media/sammainpx.png": "/whitePortfolio/static/media/sammainpx.48803aa770cee99cfbb7.png",
     "static/media/netflixpcscreen.png": "/whitePortfolio/static/media/netflixpcscreen.18165cd7bc851e8c4b5c.png",
     "static/media/netflixtapscreen.png": "/whitePortfolio/static/media/netflixtapscreen.f5db66a008dc573c6f3c.png",
     "static/media/cjtapscreen.png": "/whitePortfolio/static/media/cjtapscreen.9ef44cab60d461c95c29.png",
@@ -9,6 +10,8 @@
     "static/media/cjpcscreen.png": "/whitePortfolio/static/media/cjpcscreen.ae8c5e024095c022235c.png",
     "static/media/kakaopc_.png": "/whitePortfolio/static/media/kakaopc_.b460abe543b0221ce644.png",
     "static/media/kakaomoscreen.png": "/whitePortfolio/static/media/kakaomoscreen.e1595640f7dd56098ec5.png",
+    "static/media/netmain.png": "/whitePortfolio/static/media/netmain.ef6e388d7df055ef9a27.png",
+    "static/media/komo.png": "/whitePortfolio/static/media/komo.59d879455fc5e92dc618.png",
     "static/media/katalkchat.png": "/whitePortfolio/static/media/katalkchat.550cd3ec3583b2535769.png",
     "static/media/kakaomo.png": "/whitePortfolio/static/media/kakaomo.ca3493b75840771924d9.png",
     "static/media/kakaopcscreen.png": "/whitePortfolio/static/media/kakaopcscreen.e00b8f376b9db2be6f34.png",
@@ -19,11 +22,11 @@
     "static/media/cjtap.png": "/whitePortfolio/static/media/cjtap.38d5bb9275b6c14a829f.png",
     "static/media/cjmo.png": "/whitePortfolio/static/media/cjmo.2890d9a2ddac37e54dd4.png",
     "index.html": "/whitePortfolio/index.html",
-    "main.46f3543b.css.map": "/whitePortfolio/static/css/main.46f3543b.css.map",
-    "main.c46e6a78.js.map": "/whitePortfolio/static/js/main.c46e6a78.js.map"
+    "main.59b55dfe.css.map": "/whitePortfolio/static/css/main.59b55dfe.css.map",
+    "main.54a20854.js.map": "/whitePortfolio/static/js/main.54a20854.js.map"
   },
   "entrypoints": [
-    "static/css/main.46f3543b.css",
-    "static/js/main.c46e6a78.js"
+    "static/css/main.59b55dfe.css",
+    "static/js/main.54a20854.js"
   ]
 }
