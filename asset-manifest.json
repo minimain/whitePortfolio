@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/whitePortfolio/static/css/main.59b55dfe.css",
+    "main.css": "/whitePortfolio/static/css/main.fe591f26.css",
     "main.js": "/whitePortfolio/static/js/main.54a20854.js",
     "static/media/sammainpx.png": "/whitePortfolio/static/media/sammainpx.48803aa770cee99cfbb7.png",
     "static/media/netflixpcscreen.png": "/whitePortfolio/static/media/netflixpcscreen.18165cd7bc851e8c4b5c.png",
@@ -22,11 +22,11 @@
     "static/media/cjtap.png": "/whitePortfolio/static/media/cjtap.38d5bb9275b6c14a829f.png",
     "static/media/cjmo.png": "/whitePortfolio/static/media/cjmo.2890d9a2ddac37e54dd4.png",
     "index.html": "/whitePortfolio/index.html",
-    "main.59b55dfe.css.map": "/whitePortfolio/static/css/main.59b55dfe.css.map",
+    "main.fe591f26.css.map": "/whitePortfolio/static/css/main.fe591f26.css.map",
     "main.54a20854.js.map": "/whitePortfolio/static/js/main.54a20854.js.map"
   },
   "entrypoints": [
-    "static/css/main.59b55dfe.css",
+    "static/css/main.fe591f26.css",
     "static/js/main.54a20854.js"
   ]
 }
