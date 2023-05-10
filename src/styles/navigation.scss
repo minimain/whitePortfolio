@@ -1,7 +1,7 @@
 @import url(common.scss);
 
-$main-color:#FFF018;
-$main-background: #000;
+$main-color:#ffc800;
+$main-background: #ffffff;
 $main-font:'Black Han Sans', sans-serif;
 $sub-font: 'Roboto', sans-serif;
 
@@ -9,7 +9,7 @@ $sub-font: 'Roboto', sans-serif;
   position: absolute;top: 0;left: 0;
   width: 100%;
   height: 100vh;
-  background: $main-background;
+  background: #f2f4f1;
   overflow: hidden;
 
   // 햄버거버튼
@@ -147,17 +147,18 @@ $sub-font: 'Roboto', sans-serif;
           border-right: none;
           line-height: 1.8;
           padding-left: 30px;
-          font-size: 35px;color: #fff;
+          font-size: 35px;color: #1c1c1c;
           letter-spacing: 2px;
-          text-shadow: 2px 2px 2px #ccc;
+          text-shadow: 4px 4px 2px #9b9b9b;
           
           &:hover{
             cursor: pointer;
             font-size: 36px;
-            background: linear-gradient(0deg, rgba(255,255,255,1) 24%, rgba(248,255,72,1) 100%);
+            background: linear-gradient(0deg, rgb(211, 255, 17) 24%, rgb(255, 203, 72) 100%);
             background-clip: text;
             -webkit-text-fill-color: transparent;
             text-shadow: none;
+            transform: scale(1.05);
             }
           &:nth-of-type(2){
             //background: #fff;
