@@ -345,48 +345,17 @@ overflow-x: hidden;
 // }
 // .iins{display: block;
 //   width: 50px;height: 50px;position: absolute;}
-.mokup{
+.kakao_mokup{
   width: 55%;
   position: relative;
-  .mainkakaoicons{
-    width: 600px;
-    height: 700px;
-    transform: translateX(40%);
-    animation: kaiconmain 2s linear infinite;
-    .mainiconka1{
-      position: absolute;
-      top: 100px;left: 100px;
-    }
-    .mainiconka2{
-      position: absolute;
-      top: 200px;right: 100px;
-
-    }
-    .mainiconka3{
-      position: absolute;
-      top: 400px;left: 50px;
-    }
-    .mainiconka4{
-      position: absolute;
-      top: 500px;right: 150px;
-    }
-  }
-  @keyframes kaiconmain {
-    0%{transform: translateY(0px) translateX(40%);}
-    25%{transform: translateY(10px) translateX(40%);}
-    50%{transform: translateY(0px) translateX(40%);}
-    75%{transform: translateY(10px) translateX(40%);}
-    100%{transform: translateY(0px) translateX(40%);}
-
-  }
-.mokup_main_mo{
+.kakao_mokup_main_mo{
   //전체적인 크기
    position: absolute;
    top: 150px;left:50%;
    transform: translateX(-50%);    
-   width: 210px;height: 450px;
+   width: 330px;height: 550px;
    transition: all 0.2s linear 0s;
-   animation: mainka 2s linear infinite;
+   //animation: mainka 2s linear infinite;
    //background: #bb0000;
    //transform: rotate(20deg);
 /*    &:hover{     
@@ -394,36 +363,84 @@ overflow-x: hidden;
      transform: scale(1.2) translateX(-50%);
      } */
 
- .fram_main_mo{
+     .mainkakaoicons{
+      position: absolute;top: 0;
+      width: 150%;
+      height: 130%;
+      transform: translateX(-10%);
+      //background: red;
+      animation: kaicon1 2s linear infinite;
+      .mainiconka1{
+        position: absolute;
+        top: -50px;left: -10px;
+        svg{
+          width: 52px;
+          height: 58px;
+        }
+      }
+      .mainiconka2{
+        position: absolute;
+        top: 200px;right: 80px;
+        svg{
+          width: 55px;
+          height: 52px;
+        }
+      }
+      .mainiconka3{
+        position: absolute;
+        top: 400px;left: -15px;
+        svg{
+          width: 49px;
+          height: 49px;
+        }
+      }
+      .mainiconka4{
+        position: absolute;
+        top: 500px;right: 100px;
+        svg{
+          width: 40px;
+          height: 52px;
+        }
+      }
+    }
+    @keyframes kaicon1 {
+      0%{transform: translateY(0px) translateX(-10%);}
+      25%{transform: translateY(10px) translateX(-10%);}
+      50%{transform: translateY(0px) translateX(-10%);}
+      75%{transform: translateY(10px) translateX(-10%);}
+      100%{transform: translateY(0px) translateX(-10%);}
+  
+    }
+
+ .kakao_fram_main_mo{
    //틀
-   margin-left: 12px;margin-top: 42px;
-   width: 90%;height: 80%;
-  background: #342525;
+   margin-left: 7px;margin-top:22px;
+   width: 82%;height: 99%;
+   border-radius: 5px 5px 32px 32px;
+  background: #000000;
    overflow: hidden;
 
-   .backmokup_main_mo{
+   .kakao_backmokup_main_mo{
     //틀 안에 들어갈것
-     display: block;
+    position: relative;top: -158px;left: 5px;
+    display: block;
       //  transform: translateY(-100px);
-       width: 210px;height: 505px;
-       background: url(../img/kakaomoscreen.png) no-repeat 0 0;
-       background-size: contain;
-       animation: ani12 10.0s linear infinite;
+    width: 410px;height: 605px;
+      //  background: url(../img/kakaomoscreen.png) no-repeat 0 0;
+       //background-size: contain;
+      // animation: netani12 10.0s linear infinite;
+     video{
+      object-fit: contain;height: 873px;width: 270px;
+       }
      }
-     @keyframes ani12 {
-       0%{ transform: translateY(0px);}
-       4%{transform: translateY(0px);}
-       48%{transform: translateY(-155px);}
-       50%{transform: translateY(-155px);}
-       100%{transform: translateY(0px);}
-   }
  }
- .mokup_img_main_mo{
+ 
+ .kakao_mokup_img_main_mo{
    //목업
    position: absolute;left: 0;top: 0;clear: both;
    display: block;
-   width: 550px;height: 460px;
-   background:url(../img/kakaomo.png)no-repeat 0 0;
+   width: 670px;height: 580px;
+   background:url(../img/netmain.png)no-repeat 0 0;
    background-size: contain;
  }
 }
@@ -534,17 +551,116 @@ overflow-x: hidden;
         }
       }
       
-  
-        .mokup{
-          order: 1;
-          width: 55%;
-          // background: yellow;
-          .mokupimg{
-            .img_roll{}
+      .net_main_mokup{
+        width: 55%;
+        position: relative;
+      .net_mokup_main_mo{
+        //전체적인 크기
+         position: absolute;
+         top: 150px;left:50%;
+         transform: translateX(-50%);    
+         width: 330px;height: 550px;
+         transition: all 0.2s linear 0s;
+         //animation: mainka 2s linear infinite;
+         //background: #bb0000;
+         //transform: rotate(20deg);
+      /*    &:hover{     
+           z-index: 3;
+           transform: scale(1.2) translateX(-50%);
+           } */
+      
+           .mainneticons{
+            position: absolute;top: 0;
+            width: 150%;
+            height: 130%;
+            transform: translateX(-10%);
+            //background: red;
+            animation: neticon1 2s linear infinite;
+            .mainiconka1{
+              position: absolute;
+              top: 100px;left: -40px;
+              svg{
+                width: 52px;
+                height: 58px;
+              }
+            }
+            .mainiconka2{
+              position: absolute;
+              top: 20px;right: 80px;
+            svg{
+               width: 55px;
+               height: 52px;
+             }
+        
+            }
+            .mainiconka3{
+              position: absolute;
+              top: 400px;left: -60px;
+              svg{
+                width: 49px;
+                height: 49px;
+              }
+            }
+            .mainiconka4{
+              position: absolute;
+              top: 450px;right: 50px;
+            svg{
+               width: 40px;
+               height: 52px;
+             }
+            }
           }
-          .border_line4{}
-          .border_line5{}
-        }
+          @keyframes neticon1 {
+            0%{transform: translateY(0px) translateX(-10%);}
+            25%{transform: translateY(10px) translateX(-10%);}
+            50%{transform: translateY(0px) translateX(-10%);}
+            75%{transform: translateY(10px) translateX(-10%);}
+            100%{transform: translateY(0px) translateX(-10%);}
+        
+          }
+
+       .net_fram_main_mo{
+         //틀
+         margin-left: 7px;margin-top:22px;
+         width: 82%;height: 99%;
+         border-radius: 5px 5px 32px 32px;
+        background: #342525;
+         overflow: hidden;
+      
+         .net_backmokup_main_mo{
+          //틀 안에 들어갈것
+          position: relative;top: -27px;
+          display: block;
+            //  transform: translateY(-100px);
+          width: 410px;height: 605px;
+            //  background: url(../img/kakaomoscreen.png) no-repeat 0 0;
+             //background-size: contain;
+            // animation: netani12 10.0s linear infinite;
+           video{
+            object-fit: contain;height: 623px;width: 275px;
+             }
+           }
+       }
+
+       .net_mokup_img_main_mo{
+         //목업
+         position: absolute;left: 0;top: 0;clear: both;
+         display: block;
+         width: 670px;height: 580px;
+         background:url(../img/netmain.png)no-repeat 0 0;
+         background-size: contain;
+       }
+      }
+      /* @keyframes mainka {
+        0%{top: 150px;}
+        25%{top: 120px;}
+        //40%{top: 160px;}
+        50%{top: 150px;}
+        75%{top: 120px;}
+        //80%{top: 160px;}
+        100%{top: 150px;}
+      } */
+      }
     }
 
     .content5{
@@ -638,15 +754,101 @@ overflow-x: hidden;
       }
       
   
-        .mokup{
-          width: 55%;
-          // background: yellow;
-          .mokupimg{
-            .img_roll{}
+      .kos_main_mokup{
+        width: 55%;
+        position: relative;
+        
+      .kos_mokup_main_mo{
+        //전체적인 크기
+         position: absolute;
+         top: 150px;left:50%;
+         transform: translateX(-50%);    
+         width: 330px;height: 550px;
+         transition: all 0.2s linear 0s;
+         animation: mainka 2s linear infinite;
+         //background: #bb0000;
+         //transform: rotate(20deg);
+      /*    &:hover{     
+           z-index: 3;
+           transform: scale(1.2) translateX(-50%);
+           } */
+
+           .mainkoicons{
+            position: absolute;top: 0;
+            width: 150%;
+            height: 130%;
+            transform: translateX(-10%);
+            //background: red;
+            animation: koicon1 2s linear infinite;
+            .mainiconka1{
+              position: absolute;
+              top: 0px;left: -40px;
+            }
+            .mainiconka2{
+              position: absolute;
+              top: 210px;right: 80px;
+        
+            }
+            .mainiconka3{
+              position: absolute;
+              top: 400px;left: -60px;
+            }
+            // .mainiconka4{
+            //   position: absolute;
+            //   top: 450px;right: 50px;
+            // }
           }
-          .border_line4{}
-          .border_line5{}
-        }
+          @keyframes koicon1 {
+            0%{transform: translateY(0px) translateX(-10%);}
+            25%{transform: translateY(10px) translateX(-10%);}
+            50%{transform: translateY(0px) translateX(-10%);}
+            75%{transform: translateY(10px) translateX(-10%);}
+            100%{transform: translateY(0px) translateX(-10%);}
+        
+          }
+      
+       .kos_fram_main_mo{
+         //틀
+         margin-left: 7px;margin-top:22px;
+         width: 82%;height: 99%;
+         border-radius: 5px 5px 32px 32px;
+        background: #ffffff;
+         overflow: hidden;
+      
+         .kos_backmokup_main_mo{
+          //틀 안에 들어갈것
+          position: relative;top: -16px;left: 7px;
+          display: block;
+            //  transform: translateY(-100px);
+          width: 410px;height: 605px;
+            //  background: url(../img/kakaomoscreen.png) no-repeat 0 0;
+             //background-size: contain;
+            // animation: netani12 10.0s linear infinite;
+           video{
+            object-fit: contain;height: 623px;width: 261px;
+             }
+           }
+       }
+
+       .kos_mokup_img_main_mo{
+         //목업
+         position: absolute;left: 0;top: 0;clear: both;
+         display: block;
+         width: 670px;height: 580px;
+         background:url(../img/komo.png)no-repeat 0 0;
+         background-size: contain;
+       }
+      }
+      /* @keyframes mainka {
+        0%{top: 150px;}
+        25%{top: 120px;}
+        //40%{top: 160px;}
+        50%{top: 150px;}
+        75%{top: 120px;}
+        //80%{top: 160px;}
+        100%{top: 150px;}
+      } */
+      }
     }
 
     .content6{
@@ -744,16 +946,102 @@ overflow-x: hidden;
       }
       
   
-        .mokup{
-          order: 1;
-          width: 55%;
-          // background: yellow;
-          .mokupimg{
-            .img_roll{}
+      .cj_main_mokup{
+        width: 55%;
+        position: relative;
+        
+      .cj_mokup_main_mo{
+        //전체적인 크기
+         position: absolute;
+         top: 150px;left:50%;
+         transform: translateX(-50%);    
+         width: 330px;height: 550px;
+         transition: all 0.2s linear 0s;
+         animation: mainka 2s linear infinite;
+         //background: #bb0000;
+         //transform: rotate(20deg);
+      /*    &:hover{     
+           z-index: 3;
+           transform: scale(1.2) translateX(-50%);
+           } */
+           .maincjicons{
+            position: absolute;top: 0;
+            width: 150%;
+            height: 130%;
+            transform: translateX(-10%);
+            //background: red;
+            animation: cjicon1 2s linear infinite;
+            .mainiconka1{
+              position: absolute;
+              top:100px;left: -20px;
+            }
+            .mainiconka2{
+              position: absolute;
+              top: 250px;right: 80px;
+        
+            }
+            .mainiconka3{
+              position: absolute;
+              top: 420px;left: -30px;
+            }
+            // .mainiconka4{
+            //   position: absolute;
+            //   top: 450px;right: 50px;
+            // }
           }
-          .border_line4{}
-          .border_line5{}
-        }
+          @keyframes cjicon1 {
+            0%{transform: translateY(0px) translateX(-10%);}
+            25%{transform: translateY(10px) translateX(-10%);}
+            50%{transform: translateY(0px) translateX(-10%);}
+            75%{transform: translateY(10px) translateX(-10%);}
+            100%{transform: translateY(0px) translateX(-10%);}
+        
+          }
+
+           
+      
+       .cj_fram_main_mo{
+         //틀
+         margin-left: 7px;margin-top:22px;
+         width: 82%;height: 99%;
+         border-radius: 5px 5px 32px 32px;
+        background: #342525;
+         overflow: hidden;
+      
+         .cj_backmokup_main_mo{
+          //틀 안에 들어갈것
+          position: relative;top: -27px;left: 5px;
+          display: block;
+            //  transform: translateY(-100px);
+          width: 410px;height: 605px;
+            //  background: url(../img/kakaomoscreen.png) no-repeat 0 0;
+             //background-size: contain;
+            // animation: netani12 10.0s linear infinite;
+           video{
+            object-fit: contain;height: 623px;width: 275px;
+             }
+           }
+       }
+
+       .cj_mokup_img_main_mo{
+         //목업
+         position: absolute;left: 0;top: 0;clear: both;
+         display: block;
+         width: 670px;height: 580px;
+         background:url(../img/netmain.png)no-repeat 0 0;
+         background-size: contain;
+       }
+      }
+      /* @keyframes mainka {
+        0%{top: 150px;}
+        25%{top: 120px;}
+        //40%{top: 160px;}
+        50%{top: 150px;}
+        75%{top: 120px;}
+        //80%{top: 160px;}
+        100%{top: 150px;}
+      } */
+      }
     }
 
     .content7{
@@ -847,15 +1135,101 @@ overflow-x: hidden;
       }
       
   
-        .mokup{
-          width: 55%;
-          // background: yellow;
-          .mokupimg{
-            .img_roll{}
+      .sam_main_mokup{
+        width: 55%;
+        position: relative;
+
+      .sam_mokup_main_mo{
+        //전체적인 크기
+         position: absolute;
+         top: 150px;left:20%;
+         //transform: translateX(-50%);    
+         width: 700px;height: 580px;
+         transition: all 0.2s linear 0s;
+         //animation: mainka 2s linear infinite;
+         //background: #bb0000;
+         //transform: rotate(20deg);
+      /*    &:hover{     
+           z-index: 3;
+           transform: scale(1.2) translateX(-50%);
+           } */
+
+           .mainsamicons{
+            position: absolute;top: 0;
+            width: 150%;
+            height: 130%;
+            transform: translateX(-10%);
+            //background: red;
+            animation: samicon1 2s linear infinite;
+            .mainiconka1{
+              position: absolute;
+              top:-90px;left: 200px;
+            }
+            .mainiconka2{
+              position: absolute;
+              top: 150px;right:170px;
+        
+            }
+            .mainiconka3{
+              position: absolute;
+              top: 350px;left: 30px;
+            }
+            // .mainiconka4{
+            //   position: absolute;
+            //   top: 450px;right: 50px;
+            // }
           }
-          .border_line4{}
-          .border_line5{}
-        }
+          @keyframes samicon1 {
+            0%{transform: translateY(0px) translateX(-10%);}
+            25%{transform: translateY(10px) translateX(-10%);}
+            50%{transform: translateY(0px) translateX(-10%);}
+            75%{transform: translateY(10px) translateX(-10%);}
+            100%{transform: translateY(0px) translateX(-10%);}
+        
+          }
+      
+       .sam_fram_main_mo{
+         //틀
+         margin-left: 7px;margin-top:16px;
+         width: 95%;height: 65%;
+        // border-radius: 5px 5px 32px 32px;
+        background: #030303;
+         overflow: hidden;
+      
+         .sam_backmokup_main_mo{
+          //틀 안에 들어갈것
+          position: relative;top: -62px;left: 5px;
+          display: block;
+            //  transform: translateY(-100px);
+          width: 560px;height: 655px;
+            //  background: url(../img/kakaomoscreen.png) no-repeat 0 0;
+             //background-size: contain;
+            // animation: netani12 10.0s linear infinite;
+           video{
+            object-fit: contain;height: 520px;width: 660px;
+             }
+           }
+       }
+
+       .sam_mokup_img_main_mo{
+         //목업
+         position: absolute;left: 0;top: 0;clear: both;
+         display: block;
+         width: 700px;height: 580px;
+         background:url(../img/sammainpx.png)no-repeat 0 0;
+         background-size: contain;
+       }
+      }
+      /* @keyframes mainka {
+        0%{top: 150px;}
+        25%{top: 120px;}
+        //40%{top: 160px;}
+        50%{top: 150px;}
+        75%{top: 120px;}
+        //80%{top: 160px;}
+        100%{top: 150px;}
+      } */
+      }
     }
   }
 

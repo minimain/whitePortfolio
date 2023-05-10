@@ -167,21 +167,24 @@ function Main() {
     </div>
     </div>
 
-    <div className='mokup'>
-    <div className='mokup_main_mo'>
-      <div className='fram_main_mo'>
-        <div className='backmokup_main_mo'>
+    <div className='kakao_mokup'>
+    <div className='kakao_mokup_main_mo'>
+      <div className='kakao_fram_main_mo'>
+        <div className='kakao_backmokup_main_mo'>
+        <video src={process.env.PUBLIC_URL + '/video/kakaomain.mp4'} autoPlay muted playsInline loop>
+        </video>
         </div>
       </div>
-      <div className='mokup_img_main_mo'></div>
-    </div>
-
+      <div className='kakao_mokup_img_main_mo'></div>
     <div className='mainkakaoicons'>
     <span className='mainiconka1'>{skillList[2].icon()}</span>
     <span className='mainiconka2'>{skillList[3].icon()}</span>
     <span className='mainiconka3'>{skillList[4].icon()}</span>
     <span className='mainiconka4'>{skillList[5].icon()}</span>
     </div>
+    </div>
+
+    
     
     </div>
 
@@ -233,7 +236,7 @@ function Main() {
 
 
 {/* </div> */}
-  </div>
+</div>
 
   <div className='content4'>
     <div className='letter'>
@@ -264,22 +267,33 @@ function Main() {
       
     </div>
     </div>
- 
-    <div className='mokup'>
-      <div className='mokupimg'>
-        {/* 틀 만들기 */}
-        <div className='img_roll_frame'>
-          <span className='img_roll'>
-          </span>
+    <div className='net_main_mokup'>    
+    <div className='net_mokup_main_mo'>
+
+      <div className='net_fram_main_mo'>
+        <div className='net_backmokup_main_mo'>
+        <video src={process.env.PUBLIC_URL + '/video/netmain.mp4'} autoPlay muted playsInline loop>
+        </video>
         </div>
       </div>
-      <span className='border_line4'></span>
-      <span className='border_line5'></span>
-
-      {/* svg */}
+      <div className='net_mokup_img_main_mo'>
+        {/* <video src={process.env.PUBLIC_URL + `/video/netflix.mp4`} autoPlay={`autoPlay`}></video> */}
+        {/* <video src='/video/netflix.mp4' autoPlay/> */}
+        {/* <video src={process.env.PUBLIC_URL + '/video/netflix.mp4'} autoPlay muted playsInline width={220}>
+        </video> */}
+      </div>
+      <div className='mainneticons'>
+    <span className='mainiconka1'>{skillList[2].icon()}</span>
+    <span className='mainiconka2'>{skillList[3].icon()}</span>
+    <span className='mainiconka3'>{skillList[4].icon()}</span>
+    <span className='mainiconka4'>{skillList[5].icon()}</span>
     </div>
-  </div>
+    </div>
 
+    </div>
+ 
+
+  </div>
   <div className='content5'>
     <div className='letter'>
   <h2>KOSDAQ GLOBAL
@@ -309,14 +323,30 @@ function Main() {
     </div>
     </div>
 
-    <div className='mokup'>
-      <div className='mokupimg'>
-        <span className='img_roll'></span>
+    <div className='kos_main_mokup'>
+    <div className='kos_mokup_main_mo'>
+      <div className='kos_fram_main_mo'>
+        <div className='kos_backmokup_main_mo'>
+        <video src={process.env.PUBLIC_URL + '/video/kosmain.mp4'} autoPlay muted playsInline loop>
+        </video>
+        </div>
       </div>
-      <span className='border_line4'></span>
-      <span className='border_line5'></span>
+      <div className='kos_mokup_img_main_mo'>
+        {/* <video src={process.env.PUBLIC_URL + `/video/netflix.mp4`} autoPlay={`autoPlay`}></video> */}
+        {/* <video src='/video/netflix.mp4' autoPlay/> */}
+        {/* <video src={process.env.PUBLIC_URL + '/video/netflix.mp4'} autoPlay muted playsInline width={220}>
+        </video> */}
+      </div>
 
-      {/* svg */}
+    <div className='mainkoicons'>
+    <span className='mainiconka1'>{skillList[1].icon()}</span>
+    <span className='mainiconka2'>{skillList[2].icon()}</span>
+    <span className='mainiconka3'>{skillList[0].icon()}</span>
+    {/* <span className='mainiconka4'>{skillList[5].icon()}</span> */}
+    </div>
+    </div>
+
+    
     </div>
   </div>
 
@@ -349,14 +379,30 @@ function Main() {
     </div>
     </div>
 
-    <div className='mokup'>
-      <div className='mokupimg'>
-        <span className='img_roll'></span>
+    <div className='cj_main_mokup'>
+    <div className='cj_mokup_main_mo'>
+      <div className='cj_fram_main_mo'>
+        <div className='cj_backmokup_main_mo'>
+        <video src={process.env.PUBLIC_URL + '/video/cjmain.mp4'} autoPlay muted playsInline loop>
+        </video>
+        </div>
       </div>
-      <span className='border_line4'></span>
-      <span className='border_line5'></span>
+      <div className='cj_mokup_img_main_mo'>
+        {/* <video src={process.env.PUBLIC_URL + `/video/netflix.mp4`} autoPlay={`autoPlay`}></video> */}
+        {/* <video src='/video/netflix.mp4' autoPlay/> */}
+        {/* <video src={process.env.PUBLIC_URL + '/video/netflix.mp4'} autoPlay muted playsInline width={220}>
+        </video> */}
+      </div>
 
-      {/* svg */}
+      <div className='maincjicons'>
+    <span className='mainiconka1'>{skillList[1].icon()}</span>
+    <span className='mainiconka2'>{skillList[2].icon()}</span>
+    <span className='mainiconka3'>{skillList[0].icon()}</span>
+    {/* <span className='mainiconka4'>{skillList[5].icon()}</span> */}
+    </div>
+
+    </div>
+   
     </div>
   </div>
 
@@ -388,14 +434,29 @@ function Main() {
     </div>
     </div>
 
-    <div className='mokup'>
-      <div className='mokupimg'>
-        <span className='img_roll'></span>
+    <div className='sam_main_mokup'>
+    <div className='sam_mokup_main_mo'>
+      <div className='sam_fram_main_mo'>
+        <div className='sam_backmokup_main_mo'>
+        <video src={process.env.PUBLIC_URL + '/video/sammain.mp4'} autoPlay muted playsInline loop>
+        </video>
+        </div>
       </div>
-      <span className='border_line4'></span>
-      <span className='border_line5'></span>
+      <div className='sam_mokup_img_main_mo'>
+        {/* <video src={process.env.PUBLIC_URL + `/video/netflix.mp4`} autoPlay={`autoPlay`}></video> */}
+        {/* <video src='/video/netflix.mp4' autoPlay/> */}
+        {/* <video src={process.env.PUBLIC_URL + '/video/netflix.mp4'} autoPlay muted playsInline width={220}>
+        </video> */}
+      </div>
 
-      {/* svg */}
+      <div className='mainsamicons'>
+    <span className='mainiconka1'>{skillList[1].icon()}</span>
+    <span className='mainiconka2'>{skillList[2].icon()}</span>
+    <span className='mainiconka3'>{skillList[0].icon()}</span>
+    {/* <span className='mainiconka4'>{skillList[5].icon()}</span> */}
+    </div>
+    </div>
+    
     </div> 
   </div>
 

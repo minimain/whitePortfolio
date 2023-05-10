@@ -52,7 +52,7 @@ function Cj() {
       <button>검사PDF파일</button>
       <p>완성한 사이트의 웹접근성 검사 파일로 이동합니다.</p>
     </div>
-    
+
     </div>
     </div>
     </div>
@@ -74,6 +74,9 @@ function Cj() {
 
     </div> */}
     
+    <span className='ef1'></span>
+    <span className='ef2'></span>
+    <span className='ef3'></span>
     </>
   )
 }
