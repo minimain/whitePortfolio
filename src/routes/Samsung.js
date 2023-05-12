@@ -6,8 +6,47 @@ import'styles/samsung.scss';
 function Samsung() {
   return (
     <>
-<Nav/>
-    </>
+    <Nav/>
+
+    <div className='sam_component'>   
+       <div className='sam_compo_mokup'></div>
+       <div className='sam_back'>
+         <p>SAMSUNG</p>
+         <p>DETAILPAGE</p>
+       </div>
+       <div className='sam_color'>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+       </div>
+       <div className='sam_compo_button'>
+         {/* button_name, href_go */}
+         {/* <Button button_name="DETAIL" href_go="https://github.com/minimain/MINIchat_app"/> */}
+
+       <a href="https://github.com/minimain/MINIchat_app"
+        target="_blank"
+        rel="noopener noreferrer">
+        <button>DETAIL PDF</button>
+        </a>
+
+         <a href="https://github.com/minimain/MINIchat_app"
+        target="_blank"
+        rel="noopener noreferrer">
+        <button>GITHUB</button>
+        </a>
+
+        <a href='https://minimain.github.io/MINIchat_app/'
+        target="_blank"
+        rel="noopener noreferrer">
+        <button>SITE</button>
+        </a>
+       </div>
+   </div>
+
+   </>
   )
 }
 

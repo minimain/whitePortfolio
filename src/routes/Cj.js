@@ -6,77 +6,46 @@ import'styles/cj.scss';
 function Cj() {
   return (
     <>
-    <Nav/>
+     <Nav/>
 
-    <div className='cjmokup_img_compo'>
-    {/* 이미지 넣기 */}
-    <div className='mokup_pc'>
-      <div className='fram_pc'>
-        <div className='backmokup_pc'>
+     <div className='cj_component'>   
+        <div className='cj_compo_mokup'></div>
+        <div className='cj_back'>
+          <p>CJONECJONE</p>
+          <p>DETAILPAGE</p>
         </div>
-      </div>
-      <div className='mokup_img_pc'>
+        <div className='cj_color'>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          {/* <span></span> */}
+        </div>
+        <div className='cj_compo_button'>
+          {/* button_name, href_go */}
+          {/* <Button button_name="DETAIL" href_go="https://github.com/minimain/MINIchat_app"/> */}
 
-    <div className='block_cj1'>
-      <button>Page</button>
-      <p>완성한 사이트로 이동합니다.</p>
-    </div>
+        <a href="https://github.com/minimain/MINIchat_app"
+         target="_blank"
+         rel="noopener noreferrer">
+         <button>DETAIL PDF</button>
+         </a>
 
-      </div>
-    </div>
+          <a href="https://github.com/minimain/MINIchat_app"
+         target="_blank"
+         rel="noopener noreferrer">
+         <button>GITHUB</button>
+         </a>
 
-    <div className='mokup_tab'>
-    <div className='fram_tab'>
-        <div className='backmokup_tab'>
+         <a href='https://minimain.github.io/MINIchat_app/'
+         target="_blank"
+         rel="noopener noreferrer">
+         <button>SITE</button>
+         </a>
         </div>
     </div>
-    <div className='mokup_img_tab'>
 
-    <div className='block_cj2'>
-      <button>Github</button>
-      <p>완성한 사이트의 코드가 저장된 github로 이동합니다.</p>
-    </div>
-
-    </div>
-    </div>
-
-    <div className='mokup_mo'>
-
-    <div className='fram_mo'>
-        <div className='backmokup_mo'>
-        </div>
-    </div>
-    <div className='mokup_img_mo'>
-
-    <div className='block_cj3'>
-      <button>검사PDF파일</button>
-      <p>완성한 사이트의 웹접근성 검사 파일로 이동합니다.</p>
-    </div>
-
-    </div>
-    </div>
-    </div>
-
-    {/* <div className='button_cj'>
-
-    <div className='block_cj1'>
-      <button>Page</button>
-      <p>완성한 사이트로 이동합니다.</p>
-    </div>
-    <div className='block_cj2'>
-      <button>Github</button>
-      <p>완성한 사이트의 코드가 저장된 github로 이동합니다.</p>
-    </div>
-    <div className='block_cj3'>
-      <button>검사PDF파일</button>
-      <p>완성한 사이트의 웹접근성 검사 파일로 이동합니다.</p>
-    </div>
-
-    </div> */}
-    
-    <span className='ef1'></span>
-    <span className='ef2'></span>
-    <span className='ef3'></span>
     </>
   )
 }

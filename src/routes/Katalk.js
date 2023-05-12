@@ -1,49 +1,62 @@
+import Button from 'component/Button';
 import Nav from 'component/Nav'
 import React from 'react'
+import { Link } from 'react-router-dom';
 import'styles/katalk.scss';
+import { IoIosArrowForward } from "react-icons/io";
 // import { Link } from 'react-router-dom'
 
 
 function Katalk() {
 
   return (
-    <div className='no'>
-    <Nav/>
-    <div className="starfield">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <>
+     <Nav/>
 
-    <div className='kakamokup_img_compo'>
-    {/* 이미지 넣기 */}
-    <div className='kamokup_pc'>
-      <div className='fram_pc'>
-        <div className='backmokup_pc'>
+     <div className='kakao_component'>   
+        <div className='kakao_compo_mokup'></div>
+        <div className='kakao_back'>
+          <p>KAKAOTALK</p>
+          <p>DETAILPAGE</p>
         </div>
-      </div>
-      <div className='mokup_img_pc'></div>
-    </div>
+        <div className='kakao_color'>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div className='kakao_compo_button'>
+          {/* button_name, href_go */}
+          {/* <Button button_name="DETAIL" href_go="https://github.com/minimain/MINIchat_app"/> */}
 
-    <div className='mokup_tab'>
-    <div className='fram_tab'>
-        <div className='backmokup_tab'>
+        <a href="https://github.com/minimain/MINIchat_app"
+         target="_blank"
+         rel="noopener noreferrer">
+         <button>DETAIL PDF</button>
+         </a>
+
+          <a href="https://github.com/minimain/MINIchat_app"
+         target="_blank"
+         rel="noopener noreferrer">
+         <button>GITHUB</button>
+         </a>
+
+         <a href='https://minimain.github.io/MINIchat_app/'
+         target="_blank"
+         rel="noopener noreferrer">
+         <button>SITE</button>
+         </a>
         </div>
     </div>
-    <div className='mokup_img_tab'></div>
-    </div>
 
-    <div className='mokup_mo'>
-    <div className='fram_mo'>
-        <div className='backmokup_mo'>
-        </div>
-    </div>
-    <div className='mokup_img_mo'></div>
-    </div>
-    </div>
+    </>
+    
 
-    </div>
+    
+
+
     
   )
 }

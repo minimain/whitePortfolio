@@ -8,6 +8,7 @@ import Net from 'routes/Net'
 import Kosdaq from 'routes/Kosdaq'
 import Cj from 'routes/Cj'
 import Samsung from 'routes/Samsung'
+import Exs from 'routes/Exs'
 
 function RouterApp() {
   return (
@@ -21,6 +22,7 @@ function RouterApp() {
       <Route path='/kosdaq' element={<Kosdaq/>}/>
       <Route path='/cj' element={<Cj/>}/>
       <Route path='/samsung' element={<Samsung/>}/>
+      <Route path='/exs' element={<Exs/>}/>
     </Routes>
 
   </BrowserRouter>

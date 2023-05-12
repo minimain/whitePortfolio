@@ -1,189 +1,104 @@
-.no{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: black;
-  overflow: hidden;
-  
-  .starfield{
-    position: relative;
-    width: 100%;
-    height: 100%; 
-    overflow: hidden;
+@import url(common.scss);
+$main-color:#000000;
+$cube-color:#FFEF00;
+$main-background: #ffffff;
 
-    span{
-position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
+$title-font:'Syncopate', sans-serif;
+$main-font:'Black Han Sans', sans-serif;
+$sub-font: 'Roboto', sans-serif;
 
-	transform-origin: 50% 50%;
-
-  background-image:
-    radial-gradient(2px 2px at 40px 60px, #ccc, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 20px 50px, #ddd, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 30px 100px, #eee, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 40px 60px, #fff, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 110px 90px, #ccc, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 190px 150px, #ddd, rgba(0,0,0,0));
-  background-repeat: repeat;
-  background-size: 200px 200px;
-
-	animation-name: starfieldRotate;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+.kakao_component{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   //background: rgba(255, 0, 0, 0.206);
+   overflow:hidden;
+  .kakao_compo_mokup{
+    background: url(../img/kakaocompo.png)no-repeat 0 0;
+    width: 750px;height: 680px;
+    background-size: contain;
+    margin: 130px auto 0;
   }
-	
-}
-
-
-.starfield > span:nth-child(1){
-	animation-duration: 18s;
-}
-.starfield > span:nth-child(2){
-	animation-duration: 22s;
-}
-.starfield > span:nth-child(3){
-	animation-duration: 36s;
-}
-.starfield > span:nth-child(4){
-animation-duration: 40s;
-}
-
-@keyframes starfieldRotate {
-	from {
-		transform:rotate(0deg);
-	}
-	to {
-		transform:rotate(360deg);
-	}
-  }
-
-  // 성공 버전 ㅜ
-
-
-  .kakamokup_img_compo{
-    z-index: 10;
-    position: absolute;top:100px;left:50%;
-    transform: translateX(-50%);
-
-    // pc 본체를 가장 위에 두면 되잖아...
-    .kamokup_pc{
-     //전체적인 크기
-      position: absolute;
-      top: 80px;left:50%;
-      transform: translateX(-50%);    
-      width: 550px;height: 380px;
-      transition: all 0.2s linear 0s;
-      //background: #bb0000;
-      // transform: rotate(-20deg);
-      &:hover{     
-        z-index: 3;
-        transform: scale(1.2) translateX(-50%);
-        }
-
-    .fram_pc{
-      //틀
-      margin-left: 22px;margin-top: 42px;
-      width: 94%;height: 63%;
-     //background: #342525;
-      overflow: hidden;
-
-      .backmokup_pc{
-       //틀 안에 들어갈것
-        display: block;
-          transform: translateY(-200px);
-          width: 506px;height: 505px;
-          background: url(../img/kakaopcscreen.png) no-repeat 0 0;
-          background-size: contain;
-          animation: ani30 10.0s linear infinite;
-        }
-        @keyframes ani30 {
-          0%{ transform: translateY(0px);}
-          4%{transform: translateY(0px);}
-          48%{transform: translateY(-109px);}
-          50%{transform: translateY(-110px);}
-          100%{transform: translateY(0px);}
+  .kakao_back{
+    z-index: -1;
+    position: absolute;top: 25%;left: 0;
+    p{font-family: $title-font;font-size: 210px;font-weight: bold;
+      color: #222222;
+      &:nth-of-type(1){
+        position: absolute;top: 0;left: 0;
+      }
+      &:nth-of-type(2){
+        position: absolute;top: 180px;left: 150px;
       }
     }
-    .mokup_img_pc{
-      //목업
-      position: absolute;left: 0;top: 0;clear: both;
-      display: block;
-      width: 550px;height: 460px;
-      background:url(../img/kakaopc_.png)no-repeat 0 0;
-      background-size: contain;
+  }
+
+  .kakao_color{
+    // position: absolute;bottom:50px;left:50px;
+    span{z-index: -10;
+      border-radius: 50%;display: inline-block;background: linear-gradient(0deg, rgba(255,255,255,1) 9%, rgba(255,241,119,1) 100%);
+        box-shadow: 12px 12px 10px #ececec;
+      &:nth-of-type(1){
+        z-index: -3;
+        position: absolute;bottom:10px;left:250px;
+        width: 350px;height: 350px;
+      }
+      &:nth-of-type(2){
+        position: absolute;bottom:150px;left:260px;
+        width: 450px;height: 450px;
+      }
+      &:nth-of-type(3){
+        position: absolute;bottom:150px;left:500px;
+        width: 280px;height: 250px;
+      }
+      &:nth-of-type(4){
+        position: absolute;top:90px;right:300px;
+        width: 450px;height: 450px;
+      }
+      &:nth-of-type(5){
+        position: absolute;top:290px;right:200px;
+        width: 300px;height:300px;
+      }
+      &:nth-of-type(6){
+ position: absolute;top:380px;right:420px;
+        width: 300px;height: 300px;
+      }
     }
   }
 
-  // 탭
-  .mokup_tab{
-    //전체적인 크기
-     position: absolute;
-     top: 300px;left:-450px;      
-     width: 350px;height: 250px;
-     transition: all 0.2s linear 0s;
-     //background: #bb0000;
-     // transform: rotate(-20deg);
-     &:hover{transform: scale(1.5);}
-
-   .fram_tab{
-     //틀
-     margin-left: 15px;margin-top: 33px;
-     width: 94%;height: 71%;
-     //background: #342525;
-     overflow: hidden;
-
-     .backmokup_tab{
-      //틀 안에 들어갈것
-       display: block;
-         transform: translateY(-200px);
-         width: 320px;height: 300px;
-         background: url(../img/katalkchat.png) no-repeat 0 0;
-         background-size: contain;
-         animation: ani30 10.0s linear infinite;
-       }
-       @keyframes ani30 {
-         0%{ transform: translateY(0px);}
-         4%{transform: translateY(0px);}
-         48%{transform: translateY(-83px);}
-         50%{transform: translateY(-84px);}
-         100%{transform: translateY(0px);}
-     }
-   }
-   .mokup_img_tab{
-     //목업
-     position: absolute;left: 0;top: 0;clear: both;
-     display: block;
-     width: 350px;height: 300px;
-     background: url(../img/katab.png)no-repeat 0 0;
-     background-size: contain;
-   }
- }
-
-//  모바일
- .mokup_mo{
-    //전체적인 크기
-    
-     position: absolute;
-     top: 300px;left:210px;       
-     width: 100px;height: 200px;
-      //background: #bb0000;
-     // transform: rotate(-20deg);
-     transition: all 0.2s linear 0s;
-     &:hover{
-      
-      transform: scale(1.5);
-     }
-
-   .fram_mo{
-     //틀  
-     width: 100%;height: 100%;
-     background:url(../img/kapro.png) no-repeat 0 0;
-     background-size: contain;
-   }
- }
-
-}
+  .kakao_compo_button{
+    position: relative;top: -80px;
+    display: flex;justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    a{text-decoration: none;}
+    button{
+      cursor: pointer;
+      background: #fff;border: 1px solid #000;border-radius: 50px;padding: 15px 0px;font-size: 25px;font-family: 
+      $title-font;
+      width: 250px;
+      display: flex;align-items: center;justify-content: center;
+      transition: background 1s ease-in-out; 
+      &:hover {
+        background: linear-gradient(90deg, rgba(255,174,251,1) 9%, rgba(255,241,119,1) 100%);;
+        background-size: 400% 400%; // 배경색 변화 효과를 주기 위해 배경 크기 조정
+        animation: gradient-fill 2s ease-in-out infinite; // 배경색 변화를 무한 반복하기 위해 애니메이션 추가
+        color: #fff;font-weight: bold;
+        box-sizing: border-box;
+        border: 1px solid #fff;
+      }
+    }
+    @keyframes gradient-fill {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  }
 }

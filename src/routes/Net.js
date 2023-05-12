@@ -1,62 +1,50 @@
 import Nav from 'component/Nav';
 import React from 'react'
-import { Link } from 'react-router-dom'
 import'styles/net.scss';
 
 function Net() {
   return (
     <>
-    <div className='no'>
-<Nav/>
-{/* <div className='tooo'>
-<button class="btn">
-  Hover Me
-  <svg class="border-container">
-    <rect pathLength="100" class="border-line"></rect>
-  </svg>
-</button>
+     <Nav/>
 
-</div> */}
- <div className="starfield">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
- </div>
-
-<div className="netcontainer">
-      <div className="box">
-
-      <div className='mokup_img_compo'>
-    {/* 이미지 넣기 */}
-    <div className='mokup_pc'>
-      <div className='fram_pc'>
-        <div className='backmokup_pc'>
+     <div className='net_component'>   
+        <div className='net_compo_mokup'></div>
+        <div className='net_back'>
+          <p>NETFLIX</p>
+          <p>DETAILPAGE</p>
         </div>
-      </div>
-      <div className='mokup_img_pc'></div>
-    </div>
-
-    <div className='mokup_tab'>
-    <div className='fram_tab'>
-        <div className='backmokup_tab'>
+        <div className='net_color'>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          {/* <span></span> */}
         </div>
-    </div>
-    <div className='mokup_img_tab'></div>
-    </div>
+        <div className='net_compo_button'>
+          {/* button_name, href_go */}
+          {/* <Button button_name="DETAIL" href_go="https://github.com/minimain/MINIchat_app"/> */}
 
-    <div className='mokup_mo'>
-    <div className='fram_mo'>
-        <div className='backmokup_mo'>
+        <a href="https://github.com/minimain/MINIchat_app"
+         target="_blank"
+         rel="noopener noreferrer">
+         <button>DETAIL PDF</button>
+         </a>
+
+          <a href="https://github.com/minimain/MINIchat_app"
+         target="_blank"
+         rel="noopener noreferrer">
+         <button>GITHUB</button>
+         </a>
+
+         <a href='https://minimain.github.io/MINIchat_app/'
+         target="_blank"
+         rel="noopener noreferrer">
+         <button>SITE</button>
+         </a>
         </div>
     </div>
-    <div className='mokup_img_mo'></div>
-    </div>
-    </div>
 
-      </div>
-</div>
-</div>
     </>
   )
 }

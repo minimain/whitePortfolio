@@ -7,257 +7,98 @@ $title-font:'Syncopate', sans-serif;
 $main-font:'Black Han Sans', sans-serif;
 $sub-font: 'Roboto', sans-serif;
 
-.cjmokup_img_compo{
-/*   &::after{content: "";display: inline-block;width: 2px;height: 100vh;background: #FFEF00;position: absolute;left: 50%;transform: translateX(-50%);} */
-  position: absolute;top:100px;left:50%;
-  transform: translateX(-50%);
-  // opacity: 0;
-  // animation: mokupneet 1s cubic-bezier(0.16, 1, 0.3, 1) 3.6s alternate;
-  animation-fill-mode: forwards;
-  // pc 본체를 가장 위에 두면 되잖아...
-  .mokup_pc{
-   //전체적인 크기
-    position: absolute;
-    top: 10px;left:-600px;
-    // transform: translateX(-50%);    
-    width: 550px;height: 380px;
-    transition: all 0.2s linear 0s;
-    //background: #bb0000;
-    // transform: rotate(-20deg);
-
-    // &:hover{     
-    //   z-index: 3;
-    //   transform: scale(1.2) translateX(-50%);
-    //   }
-  
-
-  .fram_pc{
-    //틀
-    margin-left: 20px;margin-top: 10px;
-    width: 87%;height: 80%;
-   background: #342525;
-    overflow: hidden;
-
-    .backmokup_pc{
-     //틀 안에 들어갈것
-      display: block;
-        transform: translateY(-500px);
-        width: 820px;height: 855px;
-        background: url(../img/cjpcscreen.png) no-repeat 0 0;
-        background-size: contain;
-        animation: cjanipc 20.0s linear infinite;
-      }
-      @keyframes cjanipc {
-        0%{ transform: translateY(0px);}
-        4%{transform: translateY(0px);}
-        48%{transform: translateY(-559px);}
-        50%{transform: translateY(-560px);}
-        100%{transform: translateY(0px);}
-    }
-  }
-  .mokup_img_pc{
-    //목업
-    position: absolute;left: 0;top: 0;clear: both;
-    display: block;
-    width: 500px;height: 410px;
-    background:url(../img/cjpc.png)no-repeat 0 0;
+.cj_component{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   //background: rgba(255, 0, 0, 0.206);
+   overflow:hidden;
+  .cj_compo_mokup{
+    background: url(../img/cjcompo.png)no-repeat 0 0;
+    width: 750px;height: 680px;
     background-size: contain;
-
-    .block_cj1{
-      clear: both;
-      //background: yellow;
-      margin-left: 535px;
-      margin-top: 120px;
-      width: 300px;
-
-      button{
-        cursor: pointer;
-        background: #fff;border: 1px solid #000;
-        border-radius: 20px;padding: 10px 30px;font-size: 20px;
-        font-family: $title-font;text-shadow: 4px 4px 2px #ccc;margin-bottom: 20px;
-         transition: all 0.2s linear 0s;
-      &:hover{background: #000;color: #fff;
-        text-shadow: none;
-        box-shadow: 5px 5px 4px #ccc;}
-        
-    }
-    p{font-family: $sub-font;font-size: 16px;font-weight: bold;color: #4a4a4a;}
-    }
-
+    margin: 130px auto 0;
   }
-}
+  .cj_back{
+    z-index: -1;
+    position: absolute;top: 25%;left: 0;
+    p{font-family: $title-font;font-size: 210px;font-weight: bold;
+      color: #222222;
+      &:nth-of-type(1){
+        position: absolute;top: 0;left: 0;
+      }
+      &:nth-of-type(2){
+        position: absolute;top: 180px;left: 150px;
+      }
+    }
+  }
 
-// 탭
-.mokup_tab{
-  //전체적인 크기
-   position: absolute;
-   top:250px;left:150px;      
-   width: 350px;height: 250px;
-   transition: all 0.2s linear 0s;
-   //background: #bb0000;
-   // transform: rotate(-20deg);
-  //  &:hover{transform: scale(1.5);}
+  .cj_color{
+    // position: absolute;bottom:50px;left:50px;
+    span{z-index: -10;
+      border-radius: 50%;display: inline-block;background: linear-gradient(0deg, rgba(255,255,255,1) 9%, rgba(232,228,255,1) 100%);
+        box-shadow: 12px 12px 10px #ececec;
+      &:nth-of-type(1){
+        position: absolute;top:90px;left:50px;
+        width: 600px;height: 600px;
+      }
+      &:nth-of-type(2){
+        position: absolute;bottom:50px;left:360px;
+        width: 350px;height: 350px;
+      }
+      &:nth-of-type(3){
+        z-index: -3;
+        position: absolute;top:50px;right:400px;
+        width: 300px;height: 300px;
+      }
+      &:nth-of-type(4){
+        position: absolute;bottom:20px;right:200px;
+        width: 320px;height: 320px;
+      }
+      &:nth-of-type(5){
+        position: absolute;top:50px;right:240px;
+        width: 200px;height:200px;
+      }
+//       &:nth-of-type(6){
+//  position: absolute;top:380px;right:420px;
+//         width: 300px;height: 300px;
+//       }
+    }
+  }
 
- .fram_tab{
-   //틀
-   margin-left: 15px;margin-top: 16px;
-   width: 94%;height: 85%;
-   background: #342525;
-   overflow: hidden;
-
-   .backmokup_tab{
-    //틀 안에 들어갈것
-     display: block;
-       transform: translateY(-200px);
-       width: 520px;height: 1000px;
-       background: url(../img/cjtapscreen.png) no-repeat 0 0;
-       background-size: contain;
-       animation: cjanitab 20.0s linear infinite;
-     }
-     @keyframes cjanitab {
-       0%{ transform: translateY(0px);}
-       4%{transform: translateY(0px);}
-       48%{transform: translateY(-783px);}
-       50%{transform: translateY(-784px);}
-       100%{transform: translateY(0px);}
-   }
- }
- .mokup_img_tab{
-   //목업
-   position: absolute;left: 0;top: 0;clear: both;
-   display: block;
-   width: 350px;height: 300px;
-   background: url(../img/cjtap.png)no-repeat 0 0;
-   background-size: contain;
-
-   .block_cj2{
-    clear: both;
-    //background: yellow;
-    margin-left: -446px;
-    margin-top: 110px;
-    width: 400px;
-    
+  .cj_compo_button{
+    position: relative;top: -80px;
+    display: flex;justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    a{text-decoration: none;}
     button{
       cursor: pointer;
-      margin-left: 220px;
-      background: #fff;border: 1px solid #000;
-      border-radius: 20px;padding: 10px 30px;font-size: 20px;
-      font-family: $title-font;text-shadow: 4px 4px 2px #ccc;margin-bottom: 20px;
-       transition: all 0.2s linear 0s;
-    &:hover{background: #000;color: #fff;
-      text-shadow: none;
-      box-shadow: 5px 5px 4px #ccc;}
-      
+      background: #fff;border: 1px solid #000;border-radius: 50px;padding: 15px 0px;font-size: 25px;font-family: 
+      $title-font;
+      width: 250px;
+      display: flex;align-items: center;justify-content: center;
+      transition: background 1s ease-in-out; 
+      &:hover {
+        background: linear-gradient(90deg, rgba(232,228,255,1) 0%, rgba(139,19,255,1) 100%);
+        background-size: 400% 400%; // 배경색 변화 효과를 주기 위해 배경 크기 조정
+        animation: cjcompo1 2s ease-in-out infinite; // 배경색 변화를 무한 반복하기 위해 애니메이션 추가
+        color: #fff;font-weight: bold;
+        box-sizing: border-box;
+        border: 1px solid #fff;
+      }
+    }
+    @keyframes cjcompo1 {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
   }
-  p{font-family: $sub-font;font-size: 16px;font-weight: bold;color: #4a4a4a;}
-  }
- }
-}
-
-//  모바일
-.mokup_mo{
-  //전체적인 크기
-   position: absolute;
-   top:480px;left:-250px;      
-   width: 130px;height: 250px;
-   transition: all 0.2s linear 0s;
-   //background: #bb0000;
-   // transform: rotate(-20deg);
-  //  &:hover{transform: scale(1.5);}
-
- .fram_mo{
-   //틀
-   margin-left: 05px;margin-top: 20px;
-   width: 90%;height: 87%;
-   //background: #342525;
-   overflow: hidden;
-
-   .backmokup_mo{
-    //틀 안에 들어갈것
-     display: block;
-       transform: translateY(-200px);
-       width: 520px;height: 1500px;
-       background: url(../img/cjmoscreen.png) no-repeat 0 0;
-       background-size: contain;
-       animation: cjanimo 30.0s linear infinite;
-     }
-     @keyframes cjanimo {
-       0%{ transform: translateY(0px);}
-       4%{transform: translateY(0px);}
-       48%{transform: translateY(-1283px);}
-       50%{transform: translateY(-1284px);}
-       100%{transform: translateY(0px);}
-   }
- }
- .mokup_img_mo{
-   //목업
-   position: absolute;left: 0;top: 0;clear: both;
-   display: block;
-   width: 130px;height: 250px;
-   background: url(../img/cjmo.png)no-repeat 0 0;
-   background-size: contain;
-
-   .block_cj3{
-    clear: both;
-    //background: yellow;
-    margin-left: 165px;
-    margin-top: 65px;
-    width: 400px;
-    
-    button{
-      cursor: pointer;
-      
-      background: #fff;border: 1px solid #000;
-      border-radius: 20px;padding: 10px 30px;font-size: 20px;
-      font-family: $title-font;text-shadow: 4px 4px 2px #ccc;margin-bottom: 20px;
-       transition: all 0.2s linear 0s;
-    &:hover{background: #000;color: #fff;text-shadow: none;
-    box-shadow: 5px 5px 4px #ccc;}
-      
-  }
-  p{font-family: $sub-font;font-size: 16px;font-weight: bold;color: #4a4a4a;}
-  }
- }
-}
-
-}
-
-/* .button_cj{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
-
-  .block_cj1{
-   margin: 50px ;
-  }
-  .block_cj2{
-
-  }
-  .block_cj3{
-
-  }
-} */
-
-.ef1{
-position: absolute;z-index: -1;
-display: inline-block;
-margin-top: 100px;margin-left: 100px;
-width: 500px;height: 500px;
-border-radius: 40% 60% 50% 90%;
-background: #666;
-}
-.ef2{
-  position: absolute;z-index: -1;
-  left: 1300px;top: 450px;
-  display: inline-block;
-  
-  width: 400px;height: 400px;
-  border-radius: 40% 60% 50% 90%;
-  background: #b1b1b1;
-}
-.ef3{
-  
 }

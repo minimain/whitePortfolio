@@ -1,0 +1,102 @@
+$value: 1px; 
+
+.button { 
+  display: inline-block;
+  position: relative;
+  margin: 1em;
+  text-decoration: none;
+  color: currentColor;
+
+  
+  &__labl {
+    padding: 1em 2.5em;
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+    transition: background .3s;
+   
+    &::before,&::after {
+      position: absolute;
+      content:"";
+    }
+ 
+    &::before {    
+      width: 100%;
+      top:-10px;
+      left:-$value;
+      height: calc(100% + 20px);
+      border-left: $value solid currentColor;
+      border-right: $value solid currentColor;     
+    }
+    &::after {
+      width: calc(100% + 20px);
+      top:-$value;
+      left: -10px;
+      height: 100%;
+      border-top: $value solid currentColor;
+      border-bottom: $value solid currentColor;     
+    }
+  }
+  &:hover &__labl {
+    background: #D7D6D6;
+  }
+  &:hover &__labl::after {
+    width: calc(100% + #{$value*2});
+    left:-$value;
+         
+  }
+  &:hover &__labl::before {
+    height: 100%;
+    top:0;
+         
+  }
+  &:hover .border__top,&:hover .border__bottom  {
+    transform: scaleX(0);
+    transition: transform .35s;
+  }
+  &:hover .border__left,&:hover .border__right  {
+    transform: scaleY(0);
+    transition: transform .45s;
+  }
+
+}
+.border {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  * {
+    position: absolute;
+    background-color: currentColor;
+    transition: transform .3s;
+    pointer-events: none;
+  }
+   
+  &__top{  
+    width: 100%;
+    height: $value;
+    transform: scaleX(1);
+    top:-10px;
+    left: 0;    
+  }
+  &__bottom {  
+    width: 100%;   
+    height: $value;
+    transform: scaleX(1);
+    bottom:-10px;
+    left: 0;    
+  }
+  &__right {  
+    height: 100%;
+    transform: scaleY(1);
+    width: $value;
+    top: 0;
+    right: -10px;    
+  }
+  &__left {  
+    height: 100%;
+    transform: scaleY(1);
+    width: $value;
+    top: 0;
+    left: -10px;    
+  }
+}
