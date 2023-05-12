@@ -1,32 +1,21 @@
 {
   "files": {
-    "main.css": "/whitePortfolio/static/css/main.fe591f26.css",
-    "main.js": "/whitePortfolio/static/js/main.54a20854.js",
+    "main.css": "/whitePortfolio/static/css/main.0d6ae41b.css",
+    "main.js": "/whitePortfolio/static/js/main.26a483a9.js",
     "static/media/sammainpx.png": "/whitePortfolio/static/media/sammainpx.48803aa770cee99cfbb7.png",
-    "static/media/netflixpcscreen.png": "/whitePortfolio/static/media/netflixpcscreen.18165cd7bc851e8c4b5c.png",
-    "static/media/netflixtapscreen.png": "/whitePortfolio/static/media/netflixtapscreen.f5db66a008dc573c6f3c.png",
-    "static/media/cjtapscreen.png": "/whitePortfolio/static/media/cjtapscreen.9ef44cab60d461c95c29.png",
-    "static/media/cjmoscreen.png": "/whitePortfolio/static/media/cjmoscreen.75b5b95a8ce2b9d28dea.png",
-    "static/media/cjpcscreen.png": "/whitePortfolio/static/media/cjpcscreen.ae8c5e024095c022235c.png",
-    "static/media/kakaopc_.png": "/whitePortfolio/static/media/kakaopc_.b460abe543b0221ce644.png",
-    "static/media/kakaomoscreen.png": "/whitePortfolio/static/media/kakaomoscreen.e1595640f7dd56098ec5.png",
+    "static/media/netflixcompo.png": "/whitePortfolio/static/media/netflixcompo.36b49ef9db6997ee6012.png",
+    "static/media/samsungcompo.png": "/whitePortfolio/static/media/samsungcompo.40a1f8ac1e08ac4b209c.png",
+    "static/media/kosdaqcompo.png": "/whitePortfolio/static/media/kosdaqcompo.e801bfc0187570fcdba8.png",
+    "static/media/cjcompo.png": "/whitePortfolio/static/media/cjcompo.bd8867971eb2c02d80dd.png",
+    "static/media/kakaocompo.png": "/whitePortfolio/static/media/kakaocompo.18a948b1382502d18392.png",
     "static/media/netmain.png": "/whitePortfolio/static/media/netmain.ef6e388d7df055ef9a27.png",
     "static/media/komo.png": "/whitePortfolio/static/media/komo.59d879455fc5e92dc618.png",
-    "static/media/katalkchat.png": "/whitePortfolio/static/media/katalkchat.550cd3ec3583b2535769.png",
-    "static/media/kakaomo.png": "/whitePortfolio/static/media/kakaomo.ca3493b75840771924d9.png",
-    "static/media/kakaopcscreen.png": "/whitePortfolio/static/media/kakaopcscreen.e00b8f376b9db2be6f34.png",
-    "static/media/netflixpc.png": "/whitePortfolio/static/media/netflixpc.fd49712e999f6c5ebc41.png",
-    "static/media/cjpc.png": "/whitePortfolio/static/media/cjpc.69befb62a355327384a0.png",
-    "static/media/kapro.png": "/whitePortfolio/static/media/kapro.7745a74a5d786bbdc1d9.png",
-    "static/media/katab.png": "/whitePortfolio/static/media/katab.9fc20ea16aee4dcf820b.png",
-    "static/media/cjtap.png": "/whitePortfolio/static/media/cjtap.38d5bb9275b6c14a829f.png",
-    "static/media/cjmo.png": "/whitePortfolio/static/media/cjmo.2890d9a2ddac37e54dd4.png",
     "index.html": "/whitePortfolio/index.html",
-    "main.fe591f26.css.map": "/whitePortfolio/static/css/main.fe591f26.css.map",
-    "main.54a20854.js.map": "/whitePortfolio/static/js/main.54a20854.js.map"
+    "main.0d6ae41b.css.map": "/whitePortfolio/static/css/main.0d6ae41b.css.map",
+    "main.26a483a9.js.map": "/whitePortfolio/static/js/main.26a483a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe591f26.css",
-    "static/js/main.54a20854.js"
+    "static/css/main.0d6ae41b.css",
+    "static/js/main.26a483a9.js"
   ]
 }
