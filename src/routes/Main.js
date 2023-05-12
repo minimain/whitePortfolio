@@ -190,7 +190,7 @@ function Main() {
         <p className='letter_name'>
       NETFLIX
         </p>
-      <Link to={'/netflix'}>
+      <Link to={'/net'}>
       <button>DETAIL</button>
       </Link>
       </div>
@@ -249,7 +249,7 @@ function Main() {
         <p className='letter_name'>
         KOSDAQ<br/>GLOBAL
         </p>
-      <Link to={'/kos'}>
+      <Link to={'/kosdaq'}>
       <button>DETAIL</button>
       </Link>
       </div>
@@ -360,7 +360,7 @@ function Main() {
         <p className='letter_name'>
         SAMSUNG
         </p>
-      <Link to={'/sam'}>
+      <Link to={'/samsung'}>
       <button>DETAIL</button>
       </Link>
       </div>
