@@ -31,13 +31,20 @@ overflow-x: hidden;
     // &.on{
     //  background: #000;
     // }
+   
     h1{
-      font-size: 200px;
+      font-size: 150px;
       font-family: $h1-font;
       font-weight: 300;
+      backface-visibility: hidden;
+      animation: maintexth1 1s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+    }
+    @keyframes maintexth1 {
+      0%{transform: translateY(100%);}
+      100%{opacity: 1;transform: translateY(0);}
     }
     .content_main{
-      font-size: 60px;
+      font-size: 50px;
       font-weight: 500;
       font-family: $h1-font;
       display: flex;
@@ -58,7 +65,9 @@ overflow-x: hidden;
   // section1
 // 소개
   .content1{
+    position: relative;top: 0;left: 0;
     width: 100%;height: 100vh;
+    //background: rebeccapurple;
     padding-top: 100px;
     box-sizing: border-box;
     // position: relative;top: 100px;
@@ -66,7 +75,7 @@ overflow-x: hidden;
         width: 100%;
         display: flex;justify-content: space-evenly;
         li{
-        font-size: 25px;
+        font-size: 20px;
         font-family: $h1-font;
         .contact_page{
           font-size: 12px;vertical-align: top;
@@ -76,12 +85,17 @@ overflow-x: hidden;
 
       .portfile{
         width: 70%;
-        margin: 200px auto 110px;
+        margin: 5% auto 5%;
+        //background: blue;
+        transform: translateY(50%);
         p{
-        font-size: 50px;
+        text-align: center;
+        font-size: 35px;
         font-family: $h1-font;
-        font-weight: 400;
+        font-weight: bold;
         word-spacing: 30px;
+        color: #151515;
+        //background: red;
         span{
           
         }
@@ -89,6 +103,7 @@ overflow-x: hidden;
       }
 
       .main_content1{
+        position: absolute;bottom: 10%;
         display: flex;justify-content: center;
         margin: 0 auto;
         width: 100%;
@@ -103,7 +118,7 @@ overflow-x: hidden;
         }
   
         .tech{
-          width: 24%;height: 500px;
+          width: 24%;height: auto;
           margin-left: 70px;
           .content1_icon{
             display: flex;
@@ -126,8 +141,8 @@ overflow-x: hidden;
         transform: translateY(-50%);
         font-family: $h1-font;
         margin: 0 auto;
-        width: 480px;
-        height: 750px;
+        width: 30%;
+        height: 80%;
         border: 1px solid #000;
         border-radius: 10px;
         h2{
@@ -176,53 +191,55 @@ overflow-x: hidden;
             }
           }
         }
-        .content2_out1{
-          width: 450px;height: 250px;
-          //background: rebeccapurple;
-          position: absolute;top: 70px;left: -550px;
-          font-family: $sub-font;
-          font-size: 20px;
-          font-weight: bold;
-          ul{
-            li{
-              padding: 10px 0;
-               span{display: block;text-indent: 15px;
-              }
+      }
+
+      .content2_out1{
+        width: 450px;height: 250px;
+        //background: rebeccapurple;
+        position: absolute;top: 10%;left: 4%;
+        font-family: $sub-font;
+        font-size: 20px;
+        font-weight: bold;
+        ul{
+          li{
+            padding: 10px 0;
+             span{display: block;text-indent: 15px;
             }
           }
         }
-  
-        .content2_out2{
-          z-index: 10;
-          position: absolute;right: -420px;bottom: 120px;
-          .letter_name{
-            text-align: center;
-            font-size: 110px;
-          }
-          a{
-            button{
-              cursor: pointer;
-              background: transparent;
-              border: 1px solid #000;
-              font-size: 30px;
-              font-family: $h1-font;
-              padding: 15px 60px;
-              border-radius: 50px;
-              margin-top: 30px;
-              transition: all 0.2s linear 0s;
-              &:hover{
-                background: #000;
-                color: #fff;
-                border: 1px solid #fff;
-              }
+      }
+
+      .content2_out2{
+        z-index: 10;
+        position: absolute;right: 5%;bottom: 10%;
+        .letter_name{
+          text-align: center;
+          font-size: 110px;
+        }
+        a{
+          button{
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid #000;
+            font-size: 30px;
+            font-family: $h1-font;
+            padding: 15px 60px;
+            border-radius: 50px;
+            margin-top: 30px;
+            transition: all 0.2s linear 0s;
+            &:hover{
+              background: #000;
+              color: #fff;
+              border: 1px solid #fff;
             }
           }
         }
       }
 
       .kakao_mokup{
-        width: 100%;
-        position:absolute;top:0;left: 20px;
+        width: 100%;height: 100%;
+        object-fit: contain;
+        position:absolute;top:5%;left: 30px;
         //animation: contentkakao 5s linear 0s infinite;
         //transition: all 0.2s linear 0s;
 /*         &:hover{
@@ -231,26 +248,28 @@ overflow-x: hidden;
       .kakao_mokup_main_mo{
         //전체적인 크기
          position: absolute;
-         top: 150px;left:50%;
-         transform: translateX(-50%);    
+         top:0;left:50%;
+         transform: translateX(-50%) translateY(20%);    
          width: 330px;height: 550px;
          transition: all 0.2s linear 0s;
-
+         //background: blue;
        .kakao_fram_main_mo{
          //틀
          margin-left: 7px;margin-top:22px;
-         width: 82%;height: 99%;
+         width:75%;height: 90%;
          border-radius: 5px 5px 32px 32px;
-        background: #000000;
+        background: #131313;
          overflow: hidden;
       
          .kakao_backmokup_main_mo{
           //틀 안에 들어갈것
-          position: relative;top: -158px;left: 5px;
+          position: relative;top: -195px;left: 5px;
           display: block;
-          width: 410px;height: 605px;
+          width: 240px;height: 900px;
+          overflow: hidden;
            video{
-            object-fit: contain;height: 873px;width: 270px;
+            width: 100%;height: 100%;
+            object-fit: contain;//height: 893px;width: 247px;
              }
            }
        }
@@ -259,7 +278,7 @@ overflow-x: hidden;
          //목업
          position: absolute;left: 0;top: 0;clear: both;
          display: block;
-         width: 380px;height: 580px;
+         width: 260px;height: 530px;
          background:url(../img/netmain.png)no-repeat 0 0;
          background-size: contain;
        }
@@ -285,8 +304,8 @@ overflow-x: hidden;
           transform: translateY(-50%);
           font-family: $h1-font;
           margin: 0 auto;
-          width: 480px;
-          height: 750px;
+          width: 30%;
+          height: 80%;
           border: 1px solid #000;
           border-radius: 10px;
           h2{
@@ -381,7 +400,8 @@ overflow-x: hidden;
         }
   
         .net_main_mokup{
-          width: 100%;
+          width: 100%;height: 100%;
+          ;
           position: absolute;top: 0;left: 20px;
         .net_mokup_main_mo{
           //전체적인 크기

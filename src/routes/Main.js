@@ -16,7 +16,9 @@ function Main() {
     const handleScroll = () => {
       const content = document.querySelector('.main');
 
-      if (window.scrollY > 0) {
+      
+      console.log('scrollY->',window.scrollY);
+      if (window.scrollY > 900) {
         content.classList.add('on');
       } else {
         content.classList.remove('on');
@@ -65,7 +67,11 @@ function Main() {
 
     <div className='portfile'>
       <p>
-        NAME KIMMINHEE AGE 2000.11.15 사용자 중심으로 기획하는것을 좋아하고 신기한것에 호기심이 강한 UI DEVELOPER <span><GoX/></span> PM 입니다.
+        NAME KIMMINHEE AGE 2000.11.15
+        <br/>
+        사용자 중심으로 기획 | 설계
+        <br/>
+        도전정신과 호기심이 강한 UI DEVELOPER <span><GoX/></span> PM 입니다.
       </p>
     </div>
 
@@ -112,7 +118,10 @@ function Main() {
 
       </div>
 
-      <div className='content2_out1'>
+
+    </div>
+
+    <div className='content2_out1'>
       <ul>
         <li>- 카카오톡 기반의 앱을 sass(scss)를 적용하여<br/>리뉴얼한 React 반응형웹사이트</li>
         <li>
@@ -136,7 +145,6 @@ function Main() {
       <button>DETAIL</button>
       </Link>
       </div>
-    </div>
     
     <div className='kakao_mokup'>
     <div className='kakao_mokup_main_mo'>
