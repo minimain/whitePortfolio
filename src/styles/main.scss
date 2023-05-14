@@ -19,8 +19,62 @@ background-attachment: fixed;
 width: 100%;
 height: 800vh;
 overflow-x: hidden;
+
+.cubeicon{
+  position: fixed;top: 50px;left: 50%;
+  transform: translateX(-50%);
+  width: 100%;height: 100%;
+  
+  //background: red;
+  object-fit: contain;
+  svg{
+    transform:translate(10%, 10%);
+    width: 80%;height: 80%;
+    animation: cubes 10s linear 0s infinite;
+    #g1{
+      transform: translate(1500px);
+      animation: cubeg1 5s linear 0s infinite;
+    }
+    #g15{
+      transform: translateY(-600px);
+      animation: cubeg15 5s linear 0s infinite;
+    }
+    #g1{
+      transform: translateY(1500px);
+      animation: cubeg1 5s linear 0s infinite;
+    }
+    #g1{
+      transform: translate(1500px);
+      animation: cubeg1 5s linear 0s infinite;
+    }
+    #g1{
+      transform: translate(1500px);
+      animation: cubeg1 5s linear 0s infinite;
+    }
+  }
+  @keyframes cubes {
+    0%{transform: rotate(0deg) translate(10%, 10%);}
+    25%{transform: rotate(10deg) translate(10%, 10%) ;}
+    50%{transform: rotate(0deg) translate(10%, 10%);}
+    75%{transform: rotate(-10deg) translate(10%, 10%) ;}
+    100%{transform: rotate(0deg) translate(10%, 10%);}
+  }
+
+  @keyframes cubeg1 {
+    0%{transform: translate(0px);}
+    50%{transform: translate(1300px, -1000px);}
+    100%{transform: translate(0px);}
+  }
+  @keyframes cubeg15 {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-600px);}
+    100%{transform: translateY(0px);}
+  }
+}
+
   // main
   .main{
+    position: relative;
     //background:linear-gradient(180deg, rgba(254,254,254,1) 43%, rgba(220,219,218,1) 100%);
     width: 100%;
     height: 100vh;
@@ -191,12 +245,61 @@ overflow-x: hidden;
             }
           }
         }
+
+        .kakao_mokup{
+          width: 100%;height: 100%;
+          object-fit: contain;
+          position:absolute;top:10%;left: 8%;
+          //animation: contentkakao 5s linear 0s infinite;
+          //transition: all 0.2s linear 0s;
+  /*         &:hover{
+            transform: rotateY(20deg);
+          } */
+        .kakao_mokup_main_mo{
+          //전체적인 크기
+           position: absolute;
+           top:0;left:50%;
+           transform: translateX(-50%);   
+           width: 330px;height: 550px;
+           transition: all 0.2s linear 0s;
+           //background: blue;
+         .kakao_fram_main_mo{
+           //틀
+           margin-left: 7px;margin-top:22px;
+           width:75%;height: 90%;
+           border-radius: 5px 5px 32px 32px;
+          background: #131313;
+           overflow: hidden;
+        
+           .kakao_backmokup_main_mo{
+            //틀 안에 들어갈것
+            position: relative;top: -195px;left: 5px;
+            display: block;
+            width: 240px;height: 900px;
+            overflow: hidden;
+             video{
+              width: 100%;height: 100%;
+              object-fit: contain;//height: 893px;width: 247px;
+               }
+             }
+         }
+         
+         .kakao_mokup_img_main_mo{
+           //목업
+           position: absolute;left: 0;top: 0;clear: both;
+           display: block;
+           width: 260px;height: 530px;
+           background:url(../img/netmain.png)no-repeat 0 0;
+           background-size: contain;
+         }
+        }
+        }
       }
 
       .content2_out1{
         width: 450px;height: 250px;
         //background: rebeccapurple;
-        position: absolute;top: 10%;left: 4%;
+        position: absolute;top: 15%;left: 4%;
         font-family: $sub-font;
         font-size: 20px;
         font-weight: bold;
@@ -236,54 +339,7 @@ overflow-x: hidden;
         }
       }
 
-      .kakao_mokup{
-        width: 100%;height: 100%;
-        object-fit: contain;
-        position:absolute;top:5%;left: 30px;
-        //animation: contentkakao 5s linear 0s infinite;
-        //transition: all 0.2s linear 0s;
-/*         &:hover{
-          transform: rotateY(20deg);
-        } */
-      .kakao_mokup_main_mo{
-        //전체적인 크기
-         position: absolute;
-         top:0;left:50%;
-         transform: translateX(-50%) translateY(20%);    
-         width: 330px;height: 550px;
-         transition: all 0.2s linear 0s;
-         //background: blue;
-       .kakao_fram_main_mo{
-         //틀
-         margin-left: 7px;margin-top:22px;
-         width:75%;height: 90%;
-         border-radius: 5px 5px 32px 32px;
-        background: #131313;
-         overflow: hidden;
-      
-         .kakao_backmokup_main_mo{
-          //틀 안에 들어갈것
-          position: relative;top: -195px;left: 5px;
-          display: block;
-          width: 240px;height: 900px;
-          overflow: hidden;
-           video{
-            width: 100%;height: 100%;
-            object-fit: contain;//height: 893px;width: 247px;
-             }
-           }
-       }
-       
-       .kakao_mokup_img_main_mo{
-         //목업
-         position: absolute;left: 0;top: 0;clear: both;
-         display: block;
-         width: 260px;height: 530px;
-         background:url(../img/netmain.png)no-repeat 0 0;
-         background-size: contain;
-       }
-      }
-      }
+
       }
       
       @keyframes contentkakao {
@@ -354,92 +410,98 @@ overflow-x: hidden;
               }
             }
           }
-          .content3_out1{
-            width: 450px;height: 250px;
-            //background: rebeccapurple;
-            position: absolute;top: 70px;right: -520px;
-            font-family: $sub-font;
-            font-size: 20px;
-            font-weight: bold;
-            ul{
-              li{
-                padding: 10px 0;
-                 span{display: block;text-indent: 15px;
-                }
-              }
-            }
-          }
+
+          .net_main_mokup{
+            width: 100%;height: 100%;
+            position: absolute;top: 0;left: 5%;
+          .net_mokup_main_mo{
+            //전체적인 크기
+             position: absolute;
+             top: 10%;left:50%;
+             //background: blue;
+             transform: translateX(-50%);    
+             width: 270px;height: 530px;
+             transition: all 0.2s linear 0s;
+           .net_fram_main_mo{
+             //틀
+             margin-left: 7px;margin-top:22px;
+             width: 90%;height: 94%;
+             border-radius: 5px 5px 32px 32px;
+            background: #342525;
+             overflow: hidden;
+          
+             .net_backmokup_main_mo{
+              //틀 안에 들어갈것
+              position: relative;top: -50px;
+              display: block;
+              width: 410px;height: 605px;
+              background: rgb(16, 16, 16);
+               video{
+                width: 60%;height: 100%;
+                object-fit: contain;
+                //height: 623px;width: 275px;
+                 }
+               }
+           }
     
-          .content3_out2{
-            z-index: 10;
-            position: absolute;left: -480px;bottom: 120px;
-            .letter_name{
-              text-align: center;
-              font-size: 110px;
-            }
-            a{
-              button{
-                cursor: pointer;
-                position: absolute;left: 210px;
-                background: transparent;
-                border: 1px solid #000;
-                font-size: 30px;
-                font-family: $h1-font;
-                padding: 15px 60px;
-                border-radius: 50px;
-                margin-top: 30px;
-                transition: all 0.2s linear 0s;
-                &:hover{
-                  background: #000;
-                  color: #fff;
-                  border: 1px solid #fff;
-                }
+           .net_mokup_img_main_mo{
+             //목업
+             position: absolute;left: 0;top: 0;clear: both;
+             display: block;
+             width: 260px;height: 530px;
+             background:url(../img/netmain.png)no-repeat 0 0;
+             background-size: contain;
+           }
+        }
+      }
+
+        }
+
+        .content3_out1{
+          width: 410px;height: 250px;
+          //background: rebeccapurple;
+          position: absolute;top: 15%;right: 5%;
+          font-family: $sub-font;
+          font-size: 18px;
+          font-weight: bold;
+          ul{
+            li{
+              padding: 10px 0;
+               span{display: block;text-indent: 15px;
               }
             }
           }
         }
   
-        .net_main_mokup{
-          width: 100%;height: 100%;
-          ;
-          position: absolute;top: 0;left: 20px;
-        .net_mokup_main_mo{
-          //전체적인 크기
-           position: absolute;
-           top: 150px;left:50%;
-           transform: translateX(-50%);    
-           width: 330px;height: 550px;
-           transition: all 0.2s linear 0s;
-         .net_fram_main_mo{
-           //틀
-           margin-left: 7px;margin-top:22px;
-           width: 82%;height: 99%;
-           border-radius: 5px 5px 32px 32px;
-          background: #342525;
-           overflow: hidden;
-        
-           .net_backmokup_main_mo{
-            //틀 안에 들어갈것
-            position: relative;top: -27px;
-            display: block;
-             
-            width: 410px;height: 605px;
-             video{
-              object-fit: contain;height: 623px;width: 275px;
-               }
-             }
-         }
+        .content3_out2{
+          z-index: 10;
+          position: absolute;left: 4%;bottom: 24%;
+          .letter_name{
+            text-align: center;
+            font-size: 100px;
+          }
+          a{
+            button{
+              cursor: pointer;
+              position: absolute;left: 160px;
+              background: transparent;
+              border: 1px solid #000;
+              font-size: 30px;
+              font-family: $h1-font;
+              padding: 15px 60px;
+              border-radius: 50px;
+              margin-top: 10px;
+              transition: all 0.2s linear 0s;
+              &:hover{
+                background: #000;
+                color: #fff;
+                border: 1px solid #fff;
+              }
+            }
+          }
+        }
   
-         .net_mokup_img_main_mo{
-           //목업
-           position: absolute;left: 0;top: 0;clear: both;
-           display: block;
-           width: 370px;height: 580px;
-           background:url(../img/netmain.png)no-repeat 0 0;
-           background-size: contain;
-         }
-      }
-    }
+
   }
 
 // content4 코스닥
@@ -452,8 +514,8 @@ overflow-x: hidden;
       transform: translateY(-50%);
       font-family: $h1-font;
       margin: 0 auto;
-      width: 480px;
-      height: 750px;
+      width: 30%;
+      height: 80%;
       border: 1px solid #000;
       border-radius: 10px;
       h2{
@@ -502,91 +564,95 @@ overflow-x: hidden;
           }
         }
       }
-      .content4_out1{
-        width: 450px;height: 250px;
-        //background: rebeccapurple;
-        position: absolute;top: 70px;left: -520px;
-        font-family: $sub-font;
-        font-size: 20px;
-        font-weight: bold;
-        ul{
-          li{
-            padding: 10px 0;
-             span{display: block;text-indent: 15px;
-            }
-          }
-        }
-      }
 
-      .content4_out2{
-        z-index: 10;
-        position: absolute;right: -380px;bottom: 120px;
-        .letter_name{
-          text-align: left;
-          font-size: 80px;
-        }
-        a{
-          button{
-            cursor: pointer;
-            background: transparent;
-            border: 1px solid #000;
-            font-size: 30px;
-            font-family: $h1-font;
-            padding: 15px 60px;
-            border-radius: 50px;
-            margin-top: 30px;
-            transition: all 0.2s linear 0s;
-            &:hover{
-              background: #000;
-              color: #fff;
-              border: 1px solid #fff;
-            }
-          }
-        }
-      }
-    }
-
-    .kos_main_mokup{
-      width: 100%;
-      position: absolute;left: 20px;top: 0;
+      .kos_main_mokup{
+        width: 100%;height: 100%;
+        position: absolute;left: 9%;top: 10%;
+        
+      .kos_mokup_main_mo{
+        //전체적인 크기
+         position: absolute;
+         top: 0%;left:50%;
+         transform: translateX(-50%);    
+         width: 330px;height: 550px;
+         transition: all 0.2s linear 0s;
+         animation: mainka 2s linear infinite; 
+       .kos_fram_main_mo{
+         //틀
+         margin-left: 7px;margin-top:0px;
+         width: 73%;height: 95%;
+         border-radius: 5px 5px 32px 32px;
+        //background: #ffffff;
+         overflow: hidden;
       
-    .kos_mokup_main_mo{
-      //전체적인 크기
-       position: absolute;
-       top: 150px;left:50%;
-       transform: translateX(-50%);    
-       width: 330px;height: 550px;
-       transition: all 0.2s linear 0s;
-       animation: mainka 2s linear infinite; 
-     .kos_fram_main_mo{
-       //틀
-       margin-left: 7px;margin-top:22px;
-       width: 82%;height: 99%;
-       border-radius: 5px 5px 32px 32px;
-      background: #ffffff;
-       overflow: hidden;
-    
-       .kos_backmokup_main_mo{
-        //틀 안에 들어갈것
-        position: relative;top: -16px;left: 7px;
-        display: block;
-        width: 410px;height: 605px;
-         video{
-          object-fit: contain;height: 623px;width: 261px;
+         .kos_backmokup_main_mo{
+          //틀 안에 들어갈것
+          position: relative;top: -45px;left: 4px;
+          display: block;
+          width: 350px;height: 605px;
+           video{
+            object-fit: contain;height: 643px;width: 245px;
+             }
            }
-         }
-     }
+       }
+  
+       .kos_mokup_img_main_mo{
+         //목업
+         position: absolute;left: 0;top: 0;clear: both;
+         display: block;
+         width: 260px;height: 530px;
+         background:url(../img/komo.png)no-repeat 0 0;
+         background-size: contain;
+       }
+      }
+      }
 
-     .kos_mokup_img_main_mo{
-       //목업
-       position: absolute;left: 0;top: 0;clear: both;
-       display: block;
-       width: 370px;height: 580px;
-       background:url(../img/komo.png)no-repeat 0 0;
-       background-size: contain;
-     }
     }
+
+    .content4_out1{
+      width: 400px;height: 250px;
+      //background: rebeccapurple;
+      position: absolute;top: 15%;left: 7%;
+      font-family: $sub-font;
+      font-size: 20px;
+      font-weight: bold;
+      ul{
+        li{
+          padding: 10px 0;
+           span{display: block;text-indent: 15px;
+          }
+        }
+      }
     }
+
+    .content4_out2{
+      z-index: 10;
+      position: absolute;right: 10%;bottom: 15%;
+      .letter_name{
+        text-align: left;
+        font-size: 80px;
+      }
+      a{
+        button{
+          cursor: pointer;
+          background: transparent;
+          border: 1px solid #000;
+          font-size: 30px;
+          font-family: $h1-font;
+          padding: 15px 60px;
+          border-radius: 50px;
+          margin-top: 30px;
+          transition: all 0.2s linear 0s;
+          &:hover{
+            background: #000;
+            color: #fff;
+            border: 1px solid #fff;
+          }
+        }
+      }
+    }
+
+
     }
 
 // content5 cjone
@@ -599,8 +665,8 @@ overflow-x: hidden;
         transform: translateY(-50%);
         font-family: $h1-font;
         margin: 0 auto;
-        width: 480px;
-        height: 750px;
+        width: 30%;
+        height: 80%;
         border: 1px solid #000;
         border-radius: 10px;
         h2{
@@ -649,92 +715,93 @@ overflow-x: hidden;
             }
           }
         }
-        .content5_out1{
-          width: 450px;height: 250px;
-          //background: rebeccapurple;
-          position: absolute;top: 70px;right: -520px;
-          font-family: $sub-font;
-          font-size: 20px;
-          font-weight: bold;
-          ul{
-            li{
-              padding: 10px 0;
-               span{display: block;text-indent: 15px;
-              }
-            }
-          }
-        }
-  
-        .content5_out2{
-          z-index: 10;
-          position: absolute;left: -400px;bottom: 150px;
-          .letter_name{
-            text-align: center;
-            font-size: 110px;
-          }
-          a{
-            button{
-              cursor: pointer;
-              position: absolute;left: 140px;
-              background: transparent;
-              border: 1px solid #000;
-              font-size: 30px;
-              font-family: $h1-font;
-              padding: 15px 60px;
-              border-radius: 50px;
-              margin-top: 30px;
-              transition: all 0.2s linear 0s;
-              &:hover{
-                background: #000;
-                color: #fff;
-                border: 1px solid #fff;
-              }
-            }
-          }
-        }
-      }
 
-      .cj_main_mokup{
-        width: 100%;
-        position: absolute;top: 0;left: 20px;
+        .cj_main_mokup{
+          width: 100%;height: 100%;
+          position: absolute;top: 10%;left: 10%;
+          
+        .cj_mokup_main_mo{
+          //전체적인 크기
+           position: absolute;
+           top: 0px;left:50%;
+           transform: translateX(-50%);    
+           width: 330px;height: 550px;
+           transition: all 0.2s linear 0s;
+           animation: mainka 2s linear infinite;
+    
+         .cj_fram_main_mo{
+           //틀
+           margin-left: 4px;margin-top:22px;
+           width: 75%;height: 90%;
+           border-radius: 5px 5px 32px 32px;
+          background: #101010;
+           overflow: hidden;
         
-      .cj_mokup_main_mo{
-        //전체적인 크기
-         position: absolute;
-         top: 150px;left:50%;
-         transform: translateX(-50%);    
-         width: 330px;height: 550px;
-         transition: all 0.2s linear 0s;
-         animation: mainka 2s linear infinite;
-  
-       .cj_fram_main_mo{
-         //틀
-         margin-left: 7px;margin-top:22px;
-         width: 82%;height: 99%;
-         border-radius: 5px 5px 32px 32px;
-        background: #342525;
-         overflow: hidden;
-      
-         .cj_backmokup_main_mo{
-          //틀 안에 들어갈것
-          position: relative;top: -27px;left: 5px;
-          display: block;
-          width: 410px;height: 605px;
-           video{
-            object-fit: contain;height: 623px;width: 275px;
+           .cj_backmokup_main_mo{
+            //틀 안에 들어갈것
+            position: relative;top: -49px;left: 5px;
+            display: block;
+            width: 250px;height: 605px;
+             video{
+              object-fit: contain;width: 100%;height: 100%;
+               }
              }
-           }
-       }
-
-       .cj_mokup_img_main_mo{
-         //목업
-         position: absolute;left: 0;top: 0;clear: both;
-         display: block;
-         width: 370px;height: 580px;
-         background:url(../img/netmain.png)no-repeat 0 0;
-         background-size: contain;
-       }
+         }
+  
+         .cj_mokup_img_main_mo{
+           //목업
+           position: absolute;left: 0;top: 0;clear: both;
+           display: block;
+           width: 260px;height: 530px;
+           background:url(../img/netmain.png)no-repeat 0 0;
+           background-size: contain;
+         }
+        }
+        }
       }
+
+      .content5_out1{
+        width: 400px;height: 250px;
+        //background: rebeccapurple;
+        position: absolute;top: 15%;right: 5%;
+        font-family: $sub-font;
+        font-size: 20px;
+        font-weight: bold;
+        ul{
+          li{
+            padding: 10px 0;
+             span{display: block;text-indent: 15px;
+            }
+          }
+        }
+      }
+
+      .content5_out2{
+        z-index: 10;
+        position: absolute;left: 9%;bottom: 30%;
+        .letter_name{
+          text-align: center;
+          font-size: 110px;
+        }
+        a{
+          button{
+            cursor: pointer;
+            position: absolute;left: 110px;
+            background: transparent;
+            border: 1px solid #000;
+            font-size: 30px;
+            font-family: $h1-font;
+            padding: 15px 60px;
+            border-radius: 50px;
+            margin-top: 30px;
+            transition: all 0.2s linear 0s;
+            &:hover{
+              background: #000;
+              color: #fff;
+              border: 1px solid #fff;
+            }
+          }
+        }
       }
 }
 
@@ -748,8 +815,8 @@ overflow-x: hidden;
     transform: translateY(-50%);
     font-family: $h1-font;
     margin: 0 auto;
-    width: 900px;
-    height: 750px;
+    width: 50%;
+    height: 70%;
     border: 1px solid #000;
     border-radius: 10px;
     h2{
@@ -772,7 +839,7 @@ overflow-x: hidden;
    &:nth-of-type(3){
     position: absolute;
     transform: rotate(270deg);
-    bottom: 180px;left: -27px;
+    bottom: 180px;left: 7px;
     font-size: 50px;
    }
     }
@@ -799,93 +866,91 @@ overflow-x: hidden;
         }
       }
     }
-    .content6_out1{
-      width: 300px;height: 250px;
-      //background: rebeccapurple;
-      position: absolute;top: 100px;left: -340px;
-      font-family: $sub-font;
-      font-size: 18px;
-      font-weight: bold;
-      ul{
-        li{
-          padding: 10px 0;
-           span{display: block;text-indent: 15px;
-          }
-        }
-      }
-    }
 
-    .content6_out2{
-      z-index: 10;
-      position: absolute;right: -320px;bottom: 120px;
-      .letter_name{
-        text-align: left;
-        font-size: 60px;
-      }
-      a{
-        button{
-          cursor: pointer;
-          background: transparent;
-          border: 1px solid #000;
-          font-size: 30px;
-          font-family: $h1-font;
-          padding: 15px 60px;
-          border-radius: 50px;
-          margin-top: 30px;
-          transition: all 0.2s linear 0s;
-          &:hover{
-            background: #000;
-            color: #fff;
-            border: 1px solid #fff;
-          }
-        }
-      }
-    }
-  }
-
-  .sam_main_mokup{
-    width: 100%;
-    position: absolute;left: 0px;top: 0px;
-
-  .sam_mokup_main_mo{
-    //전체적인 크기
-     position: absolute;
-     top: 150px;left:50%;  
-     transform: translateX(-50%); 
-     width: 700px;height: 580px;
-     transition: all 0.2s linear 0s;
-
-   .sam_fram_main_mo{
-     //틀
-     margin-left: 7px;margin-top:16px;
-     width: 95%;height: 65%;
-    background: #030303;
-     overflow: hidden;
+    .sam_main_mokup{
+      width: 100%;
+      position: absolute;left: 0%;top: 10%;
   
-     .sam_backmokup_main_mo{
-      //틀 안에 들어갈것
-      position: relative;top: -62px;left: 5px;
-      display: block;
-      width: 560px;height: 655px;
-       video{
-        object-fit: contain;height: 520px;width: 660px;
+    .sam_mokup_main_mo{
+      //전체적인 크기
+       position: absolute;
+       top: 0px;left:50%;  
+       transform: translateX(-50%); 
+       width: 555px;height: 500px;
+       transition: all 0.2s linear 0s;
+  
+     .sam_fram_main_mo{
+       //틀
+       margin-left: 7px;margin-top:16px;
+       width: 95%;height: 65%;
+      background: #030303;
+       overflow: hidden;
+    
+       .sam_backmokup_main_mo{
+        //틀 안에 들어갈것
+        position: relative;top: -165px;left: 0px;
+        display: block;
+        width: 560px;height: 655px;
+         video{
+          object-fit: contain;height: 100%;width: 100%;
+           }
          }
-       }
-   }
-
-   .sam_mokup_img_main_mo{
-     //목업
-     position: absolute;left: 0;top: 0;clear: both;
-     display: block;
-     width: 700px;height: 580px;
-     background:url(../img/sammainpx.png)no-repeat 0 0;
-     background-size: contain;
-   }
+     }
+  
+     .sam_mokup_img_main_mo{
+       //목업
+       position: absolute;left: 0;top: 0;clear: both;
+       display: block;
+       width: 550px;height: 480px;
+       background:url(../img/sammainpx.png)no-repeat 0 0;
+       background-size: contain;
+     }
+    }
+    }
   }
+
+  .content6_out1{
+    width: 290px;height: 250px;
+    //background: rebeccapurple;
+    position: absolute;top: 20%;left:5%;
+    font-family: $sub-font;
+    font-size: 18px;
+    font-weight: bold;
+    ul{
+      li{
+        padding: 10px 0;
+         span{display: block;text-indent: 15px;
+        }
+      }
+    }
   }
 
-
-
+  .content6_out2{
+    z-index: 10;
+    position: absolute;right: 5%;bottom: 25%;
+    .letter_name{
+      text-align: left;
+      font-size: 55px;
+    }
+    a{
+      button{
+        cursor: pointer;
+        background: transparent;
+        border: 1px solid #000;
+        font-size: 30px;
+        font-family: $h1-font;
+        padding: 15px 60px;
+        border-radius: 50px;
+        margin-top: 30px;
+        transition: all 0.2s linear 0s;
+        &:hover{
+          background: #000;
+          color: #fff;
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
 }
 
   // concat

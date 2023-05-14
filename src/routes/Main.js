@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 //import Mainmokup from 'component/Mainmokup';
 import { GoX } from "react-icons/go";
 import { FaBarcode } from "react-icons/fa";
+import { ReactComponent as MyIcon } from '../data/cubes.svg';
 
 
 
@@ -15,7 +16,11 @@ function Main() {
   useEffect(() => {
     const handleScroll = () => {
       const content = document.querySelector('.main');
-
+      
+      // window.scrollTo({
+      //   // top: content,
+      //   behavior: 'smooth' // 부드러운 스크롤 이동을 위해 추가한 옵션입니다.
+      // });
       
       console.log('scrollY->',window.scrollY);
       if (window.scrollY > 900) {
@@ -30,6 +35,7 @@ function Main() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
+
   }, []);
   
 
@@ -45,6 +51,10 @@ function Main() {
 
 <div className='container' >
 
+<div className='cubeicon'>
+  <MyIcon/>
+  </div>
+
 {/* main */}
 <div className='main'>
   <h1>MINHEE</h1>
@@ -54,20 +64,36 @@ function Main() {
     <GoX/><span> PM </span>
   </div>
   <p>사용자 중심으로 사고하는 UI DEVELOPER</p>
+  
+
+  <div>
+    
+  </div>
 </div>
 
 {/* section */}
 
   <div className='content1'>
     <ul className='go_page'>
-      <li>이력서<span className='contact_page'>#01</span></li>
-      <li>GitHub<span className='contact_page'>#02</span></li>
+      <li>
+      <a href="https://github.com/minimain"
+         target="_blank"
+         rel="noopener noreferrer">이력서<span className='contact_page'>#01</span>
+      </a>
+      </li>
+      <li>
+      <a href="https://github.com/minimain"
+         target="_blank"
+         rel="noopener noreferrer">
+        GitHub<span className='contact_page'>#02</span>
+        </a>
+      </li>
       <li>PDF<span className='contact_page'>#03</span></li>
     </ul>
 
     <div className='portfile'>
       <p>
-        NAME KIMMINHEE AGE 2000.11.15
+        NAME 김민희 AGE 2000.11.15
         <br/>
         사용자 중심으로 기획 | 설계
         <br/>
@@ -118,6 +144,17 @@ function Main() {
 
       </div>
 
+      <div className='kakao_mokup'>
+    <div className='kakao_mokup_main_mo'>
+      <div className='kakao_fram_main_mo'>
+        <div className='kakao_backmokup_main_mo'>
+        <video src={process.env.PUBLIC_URL + '/video/kakaomain.mp4'} autoPlay muted playsInline loop>
+        </video>
+        </div>
+      </div>
+      <div className='kakao_mokup_img_main_mo'></div>
+      </div>
+      </div>
 
     </div>
 
@@ -145,18 +182,6 @@ function Main() {
       <button>DETAIL</button>
       </Link>
       </div>
-    
-    <div className='kakao_mokup'>
-    <div className='kakao_mokup_main_mo'>
-      <div className='kakao_fram_main_mo'>
-        <div className='kakao_backmokup_main_mo'>
-        <video src={process.env.PUBLIC_URL + '/video/kakaomain.mp4'} autoPlay muted playsInline loop>
-        </video>
-        </div>
-      </div>
-      <div className='kakao_mokup_img_main_mo'></div>
-      </div>
-      </div>
 
   </div>
 
@@ -183,7 +208,24 @@ function Main() {
 
       </div>
 
-      <div className='content3_out1'>
+      <div className='net_main_mokup'>    
+    <div className='net_mokup_main_mo'>
+
+      <div className='net_fram_main_mo'>
+        <div className='net_backmokup_main_mo'>
+        <video src={process.env.PUBLIC_URL + '/video/netmain.mp4'} autoPlay muted playsInline loop>
+        </video>
+        </div>
+      </div>
+      <div className='net_mokup_img_main_mo'></div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <div className='content3_out1'>
       <ul>
       <li>- 외부 영화 정보 API를 Axios를 사용하여 불러들임.</li>
         <li>- 중첩라우트를 사용하여 컴포넌트 정리</li>
@@ -202,22 +244,8 @@ function Main() {
       <button>DETAIL</button>
       </Link>
       </div>
-    </div>
     
-    <div className='net_main_mokup'>    
-    <div className='net_mokup_main_mo'>
 
-      <div className='net_fram_main_mo'>
-        <div className='net_backmokup_main_mo'>
-        <video src={process.env.PUBLIC_URL + '/video/netmain.mp4'} autoPlay muted playsInline loop>
-        </video>
-        </div>
-      </div>
-      <div className='net_mokup_img_main_mo'></div>
-
-    </div>
-
-    </div>
   </div>
 
 {/* content4 코스닥 글로벌 */}
@@ -243,7 +271,21 @@ function Main() {
 
       </div>
 
-      <div className='content4_out1'>
+      <div className='kos_main_mokup'>
+    <div className='kos_mokup_main_mo'>
+      <div className='kos_fram_main_mo'>
+        <div className='kos_backmokup_main_mo'>
+        <video src={process.env.PUBLIC_URL + '/video/kosmain.mp4'} autoPlay muted playsInline loop>
+        </video>
+        </div>
+      </div>
+      <div className='kos_mokup_img_main_mo'></div>
+    </div>   
+    </div>
+
+    </div>
+
+    <div className='content4_out1'>
       <ul>
         <li>- 미디어쿼리를 사용하여 PC,Tablet,Mobile<br/>외 2개의 크기를 추가하여 더 자세하게 구현</li>
         <li>- javascript 를 사용하여 autoBanner 구현</li>
@@ -261,19 +303,6 @@ function Main() {
       <button>DETAIL</button>
       </Link>
       </div>
-    </div>
-
-    <div className='kos_main_mokup'>
-    <div className='kos_mokup_main_mo'>
-      <div className='kos_fram_main_mo'>
-        <div className='kos_backmokup_main_mo'>
-        <video src={process.env.PUBLIC_URL + '/video/kosmain.mp4'} autoPlay muted playsInline loop>
-        </video>
-        </div>
-      </div>
-      <div className='kos_mokup_img_main_mo'></div>
-    </div>   
-    </div>
   </div>
 
 {/* content5 cj one */}
@@ -300,7 +329,20 @@ function Main() {
 
       </div>
 
-      <div className='content5_out1'>
+      <div className='cj_main_mokup'>
+    <div className='cj_mokup_main_mo'>
+      <div className='cj_fram_main_mo'>
+        <div className='cj_backmokup_main_mo'>
+        <video src={process.env.PUBLIC_URL + '/video/cjmain.mp4'} autoPlay muted playsInline loop>
+        </video>
+        </div>
+      </div>
+      <div className='cj_mokup_img_main_mo'></div>
+    </div>
+    </div>
+    </div>
+
+    <div className='content5_out1'>
       <ul>
       <li>- mouseover시에 연속된 이미지를 동영상처럼 보이게 구현 </li>
         <li>- 미디어쿼리를 사용하여 PC,Tablet,Mobile<br/>
@@ -318,19 +360,7 @@ function Main() {
       <button>DETAIL</button>
       </Link>
       </div>
-    </div>
     
-    <div className='cj_main_mokup'>
-    <div className='cj_mokup_main_mo'>
-      <div className='cj_fram_main_mo'>
-        <div className='cj_backmokup_main_mo'>
-        <video src={process.env.PUBLIC_URL + '/video/cjmain.mp4'} autoPlay muted playsInline loop>
-        </video>
-        </div>
-      </div>
-      <div className='cj_mokup_img_main_mo'></div>
-    </div>
-    </div>
   </div>
 
   {/* content6 */}
@@ -356,7 +386,21 @@ function Main() {
 
       </div>
 
-      <div className='content6_out1'>
+      <div className='sam_main_mokup'>
+    <div className='sam_mokup_main_mo'>
+      <div className='sam_fram_main_mo'>
+        <div className='sam_backmokup_main_mo'>
+        <video src={process.env.PUBLIC_URL + '/video/sammain.mp4'} autoPlay muted playsInline loop>
+        </video>
+        </div>
+      </div>
+      <div className='sam_mokup_img_main_mo'></div>
+    </div>
+    
+    </div> 
+    </div>
+
+    <div className='content6_out1'>
       <ul>
         <li>- scroll 을 이용하여 스크롤의 위치에 따라 글이 나타나는 효과 구현</li>
         <li>- autoBanner 기능으로 배너 구현</li>
@@ -372,20 +416,7 @@ function Main() {
       <button>DETAIL</button>
       </Link>
       </div>
-    </div>
-
-    <div className='sam_main_mokup'>
-    <div className='sam_mokup_main_mo'>
-      <div className='sam_fram_main_mo'>
-        <div className='sam_backmokup_main_mo'>
-        <video src={process.env.PUBLIC_URL + '/video/sammain.mp4'} autoPlay muted playsInline loop>
-        </video>
-        </div>
-      </div>
-      <div className='sam_mokup_img_main_mo'></div>
-    </div>
-    
-    </div> 
+      
   </div>
 
 
