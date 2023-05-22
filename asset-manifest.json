@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/whitePortfolio/static/css/main.52378069.css",
-    "main.js": "/whitePortfolio/static/js/main.b602597f.js",
+    "main.css": "/whitePortfolio/static/css/main.216f9a47.css",
+    "main.js": "/whitePortfolio/static/js/main.f08510b7.js",
     "static/media/sammainpx.png": "/whitePortfolio/static/media/sammainpx.48803aa770cee99cfbb7.png",
     "static/media/samweb_vali.png": "/whitePortfolio/static/media/samweb_vali.ba568ac349e860aee6f3.png",
     "static/media/kosdaq_vali.png": "/whitePortfolio/static/media/kosdaq_vali.1940f663d4b8cf207815.png",
@@ -11,11 +11,11 @@
     "static/media/cubes.svg": "/whitePortfolio/static/media/cubes.f523addd4732c6b10f27edc19e0b8322.svg",
     "static/media/twocube.svg": "/whitePortfolio/static/media/twocube.c0b8242338e02152501cae7bc191757a.svg",
     "index.html": "/whitePortfolio/index.html",
-    "main.52378069.css.map": "/whitePortfolio/static/css/main.52378069.css.map",
-    "main.b602597f.js.map": "/whitePortfolio/static/js/main.b602597f.js.map"
+    "main.216f9a47.css.map": "/whitePortfolio/static/css/main.216f9a47.css.map",
+    "main.f08510b7.js.map": "/whitePortfolio/static/js/main.f08510b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.52378069.css",
-    "static/js/main.b602597f.js"
+    "static/css/main.216f9a47.css",
+    "static/js/main.f08510b7.js"
   ]
 }
