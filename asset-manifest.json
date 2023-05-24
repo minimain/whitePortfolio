@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/whitePortfolio/static/css/main.d1929878.css",
-    "main.js": "/whitePortfolio/static/js/main.2f08011f.js",
+    "main.js": "/whitePortfolio/static/js/main.2342df09.js",
     "static/media/sammainpx.png": "/whitePortfolio/static/media/sammainpx.48803aa770cee99cfbb7.png",
     "static/media/kosdaq_vali.png": "/whitePortfolio/static/media/kosdaq_vali.1940f663d4b8cf207815.png",
     "static/media/netmain.png": "/whitePortfolio/static/media/netmain.ef6e388d7df055ef9a27.png",
@@ -12,10 +12,10 @@
     "static/media/twocube.svg": "/whitePortfolio/static/media/twocube.c0b8242338e02152501cae7bc191757a.svg",
     "index.html": "/whitePortfolio/index.html",
     "main.d1929878.css.map": "/whitePortfolio/static/css/main.d1929878.css.map",
-    "main.2f08011f.js.map": "/whitePortfolio/static/js/main.2f08011f.js.map"
+    "main.2342df09.js.map": "/whitePortfolio/static/js/main.2342df09.js.map"
   },
   "entrypoints": [
     "static/css/main.d1929878.css",
-    "static/js/main.2f08011f.js"
+    "static/js/main.2342df09.js"
   ]
 }
