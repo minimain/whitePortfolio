@@ -32,13 +32,13 @@ function Samsung() {
         <button>DETAIL PDF</button>
         </a>
 
-         <a href="https://github.com/minimain/MINIchat_app"
+         <a href="https://github.com/minimain/clonsamsungsite"
         target="_blank"
         rel="noopener noreferrer">
         <button>GITHUB</button>
         </a>
 
-        <a href='https://minimain.github.io/MINIchat_app/'
+        <a href='https://minimain.github.io/clonsamsungsite/'
         target="_blank"
         rel="noopener noreferrer">
         <button>SITE</button>
